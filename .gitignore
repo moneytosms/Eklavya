@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+demo/*.db
+demo/**/*.db
+node_modules/

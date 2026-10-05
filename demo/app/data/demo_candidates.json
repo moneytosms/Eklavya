@@ -1,0 +1,36 @@
+{
+ "candidates": [
+  {"id":"u_c_ramesh","name":"Ramesh Kumar","lang":"hi","gender":"male","region":"urban","qp_id":"qp_ac","assessment_id":"asm_demo_ac","skill":1.0,
+   "transcript":"Main 9 saal se AC technician hoon. Split aur window AC lagata hoon, copper pipe flaring aur nitrogen se leak testing karta hoon. Gas charging R32 aur R410A mein manifold gauge se karta hoon, compressor aur capacitor bhi badalta hoon. Service mein filter aur coil ki safai karta hoon.",
+   "evidence":[["photo","ac_installation_flare_leak_test_nitrogen.svg","Flare connection and nitrogen leak test on a 1.5 ton split AC"],["photo","gas_charging_manifold_gauge_r32.svg","Manifold gauge reading during refrigerant gas charging"],["photo","capacitor_replacement_outdoor_unit.svg","Run capacitor replaced on outdoor compressor"]],
+   "attest":["Cool Air Services, Lucknow","9876500011"]},
+  {"id":"u_c_sunita","name":"Sunita Devi","lang":"hi","gender":"female","region":"rural","qp_id":"qp_sew","assessment_id":"asm_demo_sew","skill":-1.4,
+   "transcript":"Main 12 saal se silai ka kaam karti hoon. Blouse, kurta, shirt aur pant silti hoon, collar aur sleeve lagati hoon. Machine mein tension aur needle khud badalti hoon, thoda thoda overlock bhi karti hoon.",
+   "evidence":[["photo","stitching_seam_sample_shirt_collar.svg","Shirt collar stitching sample"]],
+   "attest":null},
+  {"id":"u_c_imran","name":"Imran Sheikh","lang":"en","gender":"male","region":"urban","qp_id":"qp_elec","assessment_id":"asm_demo_elec","skill":0.6,
+   "transcript":"I have worked as an electrician for 6 years doing house wiring, concealed conduit wiring, switchboards, MCB and earthing. I repair ceiling fans and find short circuit faults using a multimeter and tester.",
+   "evidence":[["photo","house_wiring_conduit_switchboard_mcb.svg","Concealed conduit wiring and distribution board with MCB"],["photo","earthing_pit_earth_resistance_test.svg","Earth pit and earth resistance measurement"],["photo","ceiling_fan_capacitor_repair_fault.svg","Ceiling fan capacitor replacement and fault repair"]],
+   "attest":["Sheikh Electricals, Pune","9876500033"]}
+ ],
+ "sample_phrases": {
+  "en": [
+   "I have 8 years of experience as an AC technician. I install split and window AC and do gas charging and compressor repair.",
+   "I work as an electrician for 5 years doing house wiring, switchboards, MCB, earthing and fan repair.",
+   "I am a tailor with 10 years experience. I stitch shirts, trousers and blouses on a sewing machine.",
+   "I am a plumber for 7 years. I do pipe fitting, tap and bathroom fitting and repair leakages."
+  ],
+  "hi": [
+   "मैं 8 साल से एसी मैकेनिक हूँ। स्प्लिट और विंडो एसी लगाता हूँ, गैस भरता हूँ और कंप्रेसर ठीक करता हूँ।",
+   "मैं 5 साल से बिजली मिस्त्री हूँ। घर की वायरिंग, स्विचबोर्ड, एमसीबी और अर्थिंग का काम करता हूँ।",
+   "मैं दस साल से दर्जी का काम करती हूँ। शर्ट, पैंट और ब्लाउज़ सिलाई मशीन पर सिलती हूँ।",
+   "मैं 7 साल से प्लंबर हूँ। पाइप फिटिंग, नल और बाथरूम की फिटिंग और लीकेज की मरम्मत करता हूँ।"
+  ],
+  "hinglish": [
+   "Main 8 saal se AC mechanic hoon, split AC lagata hoon aur gas bharta hoon.",
+   "Main 5 saal se bijli ka kaam karta hoon, wiring aur MCB lagata hoon.",
+   "Main 10 saal se silai karti hoon, shirt aur blouse silti hoon.",
+   "Main 7 saal se plumber hoon, nal aur pipe fitting karta hoon."
+  ]
+ }
+}

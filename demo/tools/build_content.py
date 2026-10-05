@@ -1,0 +1,437 @@
+"""Generates app/data/qps.json and app/data/items.json (illustrative content, EN + HI)."""
+import json, pathlib
+
+OUT = pathlib.Path(__file__).resolve().parent.parent / "app" / "data"
+DISC = "Illustrative content, modelled on public NSQF qualification packs. Not an official QP."
+
+
+def M(q, qh, o, oh, c, d): return dict(type="mcq", q=q, qh=qh, o=o, oh=oh or o, c=c, d=d)
+def S(q, qh, o, oh, c, d): return dict(type="scenario", q=q, qh=qh, o=o, oh=oh or o, c=c, d=d)
+def I(img, q, qh, o, oh, c, d): return dict(type="image-id", img=img, q=q, qh=qh, o=o, oh=oh or o, c=c, d=d)
+def O(q, qh, st, sth, d): return dict(type="ordering", q=q, qh=qh, steps=st, stepsh=sth, d=d)
+
+
+def P(t, crit=False): return (t, crit)
+
+QPS = []
+
+# ------------------------------------------------------------------ AC
+QPS.append(dict(id="qp_ac", key="ac", title="Air Conditioner Technician (Split/Window)", title_hi="एयर कंडीशनर तकनीशियन (स्प्लिट/विंडो)",
+ code="ILL/Q0101", nsqf=4, sector="Electronics & Appliances",
+ desc="Installs, services and repairs split and window room air conditioners safely.",
+ nos=[
+ dict(title="Install split and window AC units", title_hi="स्प्लिट और विंडो एसी की स्थापना", core=True, bridge="AC installation and flaring practicum",
+  kw="install installation fitting mounting plate indoor outdoor unit copper pipe flare nitrogen vacuum pump drain slope lagana lagata",
+  desc="Select location, mount units, route piping, leak-test and evacuate.",
+  pcs=[P("Select a stable, level mounting location for indoor and outdoor units as per clearance norms"),
+       P("Drill the wall, fix the mounting plate and route copper piping with correct drain slope"),
+       P("Flare, connect and leak-test refrigerant pipes with nitrogen before releasing gas", True),
+       P("Evacuate the line with a vacuum pump and open the service valves in sequence")],
+  items=[
+   M("Why should the indoor unit drain pipe slope downward?", "इनडोर यूनिट की ड्रेन पाइप नीचे की ओर ढलान में क्यों रखी जाती है?",
+     ["So condensate water drains out by gravity","To increase gas pressure","To reduce noise","To cool the room faster"],
+     ["ताकि पानी गुरुत्वाकर्षण से बाहर निकले","गैस का दबाव बढ़ाने के लिए","आवाज़ कम करने के लिए","कमरा जल्दी ठंडा करने के लिए"],0,1),
+   M("Which tool removes air and moisture from the piping before the valves are opened?", "वाल्व खोलने से पहले पाइप से हवा और नमी कौन सा औज़ार निकालता है?",
+     ["Vacuum pump","Torque wrench","Multimeter","Pipe cutter"],["वैक्यूम पंप","टॉर्क रिंच","मल्टीमीटर","पाइप कटर"],0,2),
+   M("What is normally used to pressure-test AC pipe joints for leaks?", "एसी पाइप जोड़ों की लीक जांच के लिए आम तौर पर क्या इस्तेमाल होता है?",
+     ["Dry nitrogen","Oxygen","Plain water","Hot air"],["सूखी नाइट्रोजन","ऑक्सीजन","सादा पानी","गर्म हवा"],0,2),
+   S("You have finished flaring and connecting pipes of a new 1.5 ton split AC. What do you do before opening the service valves?",
+     "आपने नए 1.5 टन स्प्लिट एसी की पाइप फ्लेयर करके जोड़ दी हैं। सर्विस वाल्व खोलने से पहले आप क्या करेंगे?",
+     ["Pressure-test with nitrogen, then evacuate","Open the valves and listen for hissing","Run the compressor to check cooling","Tighten the nuts until the pipe deforms"],
+     ["नाइट्रोजन से प्रेशर टेस्ट करके फिर वैक्यूम करेंगे","वाल्व खोलकर सीटी की आवाज़ सुनेंगे","कंप्रेसर चलाकर ठंडक देखेंगे","पाइप दबने तक नट कसेंगे"],0,3),
+   O("Arrange the installation steps in order.", "स्थापना के चरणों को सही क्रम में लगाइए।",
+     ["Fix the mounting plate","Drill the wall hole and route piping","Connect and leak-test the pipes","Evacuate and open the valves"],
+     ["माउंटिंग प्लेट लगाएँ","दीवार में छेद करें और पाइप निकालें","पाइप जोड़ें और लीक टेस्ट करें","वैक्यूम करें और वाल्व खोलें"],3),
+   I("🔧", "This tool is most often used to tighten which part during AC installation?", "एसी स्थापना में यह औज़ार आम तौर पर किसे कसने के लिए इस्तेमाल होता है?",
+     ["Flare nuts on copper pipes","Wall plugs","Remote batteries","Air filters"],["तांबे की पाइप के फ्लेयर नट","दीवार के प्लग","रिमोट की बैटरी","एयर फिल्टर"],0,2)]),
+ dict(title="Diagnose and repair refrigeration circuit faults", title_hi="रेफ्रिजरेशन सर्किट की खराबी पहचानना और ठीक करना", core=True, bridge="Refrigeration circuit diagnostics lab",
+  kw="gas charging refrigerant r32 r22 r410a compressor leak manifold gauge pressure cooling fault repair brazing capillary",
+  desc="Diagnose low cooling, leaks and compressor faults; recover and charge refrigerant.",
+  pcs=[P("Read manifold gauge pressures and identify low-gas or choked-capillary symptoms"),
+       P("Recover refrigerant and braze repaired joints using nitrogen purge", True),
+       P("Charge the correct refrigerant type and quantity as per nameplate"),
+       P("Diagnose a non-starting or tripping compressor and replace it safely")],
+  items=[
+   M("Low suction pressure with frosting on the indoor coil usually indicates?", "कम सक्शन प्रेशर और इनडोर कॉइल पर बर्फ जमना आम तौर पर क्या बताता है?",
+     ["Low refrigerant charge or restriction","Overcharged system","Faulty remote","Dirty outdoor body paint"],["गैस कम होना या रुकावट","गैस ज़्यादा भरी होना","रिमोट खराब होना","आउटडोर का पेंट गंदा होना"],0,2),
+   M("Which information decides the refrigerant quantity to charge?", "कितनी गैस भरनी है यह किस जानकारी से तय होता है?",
+     ["Nameplate on the outdoor unit","Colour of the pipes","Age of the technician","Room paint"],["आउटडोर यूनिट की नेमप्लेट","पाइप का रंग","तकनीशियन की उम्र","कमरे का रंग"],0,1),
+   M("Why is nitrogen purged through the pipe during brazing?", "ब्रेज़िंग के समय पाइप में नाइट्रोजन क्यों चलाई जाती है?",
+     ["To prevent oxide scale inside the pipe","To heat the joint faster","To add refrigerant","To cool the compressor"],["पाइप के अंदर ऑक्साइड जमने से रोकने के लिए","जोड़ जल्दी गरम करने के लिए","गैस भरने के लिए","कंप्रेसर ठंडा करने के लिए"],0,3),
+   S("A customer's AC runs but does not cool and the outdoor fan runs while the compressor hums and trips. What is the safest first check?",
+     "ग्राहक का एसी चल रहा है पर ठंडा नहीं कर रहा; आउटडोर पंखा चलता है, कंप्रेसर भनभनाकर ट्रिप होता है। सबसे सुरक्षित पहली जाँच क्या है?",
+     ["Isolate power and test the run capacitor and compressor windings","Add more gas immediately","Bypass the overload protector","Hit the compressor with a hammer"],
+     ["बिजली बंद करके रन कैपेसिटर और कंप्रेसर वाइंडिंग जाँचें","तुरंत और गैस भरें","ओवरलोड प्रोटेक्टर बायपास करें","कंप्रेसर पर हथौड़ा मारें"],0,4),
+   O("Order the refrigerant circuit repair steps.", "रेफ्रिजरेंट सर्किट मरम्मत के चरण क्रम में लगाइए।",
+     ["Recover remaining refrigerant","Braze the repaired joint with nitrogen purge","Pressure-test and evacuate","Charge by nameplate weight"],
+     ["बची हुई गैस रिकवर करें","नाइट्रोजन चलाकर जोड़ ब्रेज़ करें","प्रेशर टेस्ट करके वैक्यूम करें","नेमप्लेट के वज़न से गैस भरें"],4),
+   I("🌡️", "A clip-on thermometer on the AC pipes is mainly used to check?", "एसी की पाइप पर लगा क्लिप-ऑन थर्मामीटर मुख्यतः क्या जाँचने के लिए है?",
+     ["Superheat and subcooling","Voltage","Room humidity","Fan speed"],["सुपरहीट और सबकूलिंग","वोल्टेज","कमरे की नमी","पंखे की गति"],0,4)]),
+ dict(title="Electrical connections, capacitors and controls", title_hi="बिजली कनेक्शन, कैपेसिटर और कंट्रोल", core=True, bridge="AC electrical and controls workshop",
+  kw="wiring capacitor multimeter mcb stabilizer thermostat pcb sensor voltage earthing electrical bijli",
+  desc="Make safe power connections and diagnose capacitors, sensors and control boards.",
+  pcs=[P("Provide a dedicated, properly rated MCB and earthed supply to the AC", True),
+       P("Measure voltage, current and capacitance with a multimeter or clamp meter"),
+       P("Replace a failed run or start capacitor with the correct rating"),
+       P("Check thermostat, sensor and PCB connections for control faults")],
+  items=[
+   M("The AC outdoor unit needs which type of supply protection?", "एसी आउटडोर यूनिट को किस तरह की सप्लाई सुरक्षा चाहिए?",
+     ["A dedicated MCB of correct rating with earthing","No protection needed","Only a plug top","A fuse wire of any size"],["सही रेटिंग का अलग MCB और अर्थिंग","कोई सुरक्षा नहीं","सिर्फ प्लग टॉप","कोई भी मोटाई का फ्यूज तार"],0,1),
+   M("A run capacitor is replaced. The new one must match the old in?", "रन कैपेसिटर बदलते समय नया किससे मेल खाना चाहिए?",
+     ["µF rating and voltage rating","Colour only","Brand name only","Weight"],["µF और वोल्टेज रेटिंग","सिर्फ रंग","सिर्फ ब्रांड","वज़न"],0,2),
+   M("Which instrument checks AC supply voltage at the outdoor unit terminals?", "आउटडोर यूनिट टर्मिनल पर सप्लाई वोल्टेज कौन सा यंत्र जाँचता है?",
+     ["Multimeter","Vacuum gauge","Spirit level","Flaring block"],["मल्टीमीटर","वैक्यूम गेज","स्पिरिट लेवल","फ्लेयरिंग ब्लॉक"],0,1),
+   S("The indoor unit display is blank but the supply at the socket is normal. What do you check first after isolating power?",
+     "इनडोर यूनिट का डिस्प्ले बंद है पर सॉकेट में सप्लाई सामान्य है। बिजली बंद करके पहले क्या जाँचेंगे?",
+     ["Board fuse, connector seating and transformer output","Refrigerant pressure","Drain pipe slope","Outdoor fan blade"],
+     ["बोर्ड का फ्यूज, कनेक्टर और ट्रांसफॉर्मर आउटपुट","गैस प्रेशर","ड्रेन पाइप की ढलान","आउटडोर पंखे की पंखुड़ी"],0,3),
+   O("Order the safe capacitor replacement steps.", "कैपेसिटर बदलने के सुरक्षित चरण क्रम में लगाइए।",
+     ["Switch off and isolate the supply","Discharge the old capacitor","Replace with the same rating","Restore supply and test current"],
+     ["सप्लाई बंद करके आइसोलेट करें","पुराने कैपेसिटर को डिस्चार्ज करें","उसी रेटिंग का नया लगाएँ","सप्लाई चालू करके करंट जाँचें"],3),
+   I("⚡", "This symbol on a panel warns of?", "पैनल पर यह चिह्न किस बात की चेतावनी देता है?",
+     ["Electric shock hazard","Fragile glass","Wet floor","Heavy load"],["बिजली के झटके का खतरा","काँच टूटने वाला","गीला फर्श","भारी सामान"],0,1)]),
+ dict(title="Preventive maintenance and servicing", title_hi="निवारक रखरखाव और सर्विसिंग", core=False, bridge="AC servicing basics",
+  kw="service servicing cleaning filter coil jet pump drain amc maintenance safai",
+  desc="Clean filters and coils, check drain, and record service.",
+  pcs=[P("Clean filters, indoor coil and outdoor condenser using suitable methods without damaging fins"),
+       P("Check drain line, fan motors and refrigerant pressures during service"),
+       P("Record service readings and advise the customer on maintenance")],
+  items=[
+   M("How often should room AC filters normally be cleaned in dusty areas?", "धूल वाले इलाके में एसी के फिल्टर आम तौर पर कितनी बार साफ़ करने चाहिए?",
+     ["Every 2 to 4 weeks","Once in 5 years","Never","Only when it breaks"],["हर 2 से 4 हफ्ते में","5 साल में एक बार","कभी नहीं","टूटने पर ही"],0,1),
+   M("Which is the safest way to clean condenser fins?", "कंडेंसर की फिन साफ़ करने का सबसे सुरक्षित तरीका कौन सा है?",
+     ["Low-pressure water with fin comb for bent fins","Wire brush hard scrubbing","Sharp screwdriver","Hammering"],["कम प्रेशर का पानी और मुड़े फिन के लिए फिन कॉम्ब","तार के ब्रश से ज़ोर से रगड़ना","तेज़ पेचकस","हथौड़ी से ठोकना"],0,2),
+   M("Water dripping from the indoor unit after service most likely means?", "सर्विस के बाद इनडोर यूनिट से पानी टपकना अक्सर किसका संकेत है?",
+     ["Blocked or mis-sloped drain","Overcharged remote","Loose door","Wrong wall colour"],["ड्रेन का ब्लॉक या गलत ढलान","रिमोट ओवरचार्ज","दरवाज़ा ढीला","दीवार का रंग गलत"],0,2),
+   S("During service you notice the outdoor coil is badly corroded. What should you do?", "सर्विस में आपने देखा कि आउटडोर कॉइल बहुत ज़्यादा जंग खाई है। आप क्या करेंगे?",
+     ["Inform the customer, record it and recommend repair or replacement","Ignore it","Paint over it","Remove it without telling"],["ग्राहक को बताएँ, दर्ज करें और मरम्मत या बदलने की सलाह दें","अनदेखा करें","ऊपर से पेंट कर दें","बिना बताए निकाल दें"],0,3),
+   O("Order a basic service routine.", "बुनियादी सर्विस के चरण क्रम में लगाइए।",
+     ["Isolate power and cover surroundings","Clean filters and coils","Check drain and fan operation","Record readings and brief the customer"],
+     ["बिजली बंद करें और आसपास ढकें","फिल्टर और कॉइल साफ़ करें","ड्रेन और पंखा जाँचें","रीडिंग दर्ज करें और ग्राहक को बताएँ"],2),
+   I("🧰", "This item on your service visit is mainly for?", "सर्विस विज़िट में यह वस्तु मुख्यतः किसलिए है?",
+     ["Carrying and organising tools","Cooling the room","Measuring gas","Wall painting"],["औज़ार रखना और सजाना","कमरा ठंडा करना","गैस मापना","दीवार रंगना"],0,1)]),
+ dict(title="Workplace safety and customer handling", title_hi="कार्यस्थल सुरक्षा और ग्राहक व्यवहार", core=False, bridge="Safety and customer service essentials",
+  kw="safety helmet gloves ladder harness customer billing estimate ppe suraksha",
+  desc="Work at height safely, use PPE and communicate with customers.",
+  pcs=[P("Use PPE and a secured ladder or harness when working at height for outdoor units", True),
+       P("Explain faults, estimate and charges clearly to the customer"),
+       P("Dispose of refrigerant and waste as per environmental guidelines")],
+  items=[
+   M("What is mandatory when fixing an outdoor unit on an upper-floor bracket?", "ऊपरी मंज़िल पर आउटडोर यूनिट का ब्रैकेट लगाते समय क्या ज़रूरी है?",
+     ["Safety harness or secured access","Wearing slippers","Working alone without checking","Leaning out of window"],["सेफ्टी हार्नेस या सुरक्षित पहुँच","चप्पल पहनना","बिना जाँचे अकेले काम","खिड़की से झुककर काम"],0,1),
+   M("Refrigerant should be?", "रेफ्रिजरेंट को कैसे संभालना चाहिए?",
+     ["Recovered, not vented to air","Released outdoors","Poured in drain","Burned"],["रिकवर करना, हवा में नहीं छोड़ना","बाहर छोड़ देना","नाली में डालना","जलाना"],0,2),
+   M("Before starting work you should tell the customer?", "काम शुरू करने से पहले ग्राहक को क्या बताना चाहिए?",
+     ["Likely fault, estimate and time needed","Nothing","Only your phone number","Price of another shop"],["संभावित खराबी, अनुमानित खर्च और समय","कुछ नहीं","सिर्फ अपना नंबर","दूसरी दुकान का दाम"],0,1),
+   S("The customer wants you to skip the earthing to save money. What do you do?", "ग्राहक पैसे बचाने के लिए अर्थिंग छोड़ने को कहता है। आप क्या करेंगे?",
+     ["Explain the shock risk and refuse to skip it","Skip it","Skip and charge less","Leave quietly"],["झटके का खतरा समझाएँ और अर्थिंग ज़रूर करें","छोड़ दें","छोड़कर कम पैसे लें","चुपचाप चले जाएँ"],0,3),
+   O("Order the safe outdoor-unit work routine.", "आउटडोर यूनिट काम के सुरक्षित चरण क्रम में लगाइए।",
+     ["Inspect the ladder or access","Wear PPE and harness","Work with a helper holding the unit","Clean the area and inform the customer"],
+     ["सीढ़ी या पहुँच की जाँच करें","PPE और हार्नेस पहनें","सहायक के साथ यूनिट पकड़कर काम करें","जगह साफ़ करें और ग्राहक को बताएँ"],2),
+   I("⛑️", "This equipment protects the worker's?", "यह उपकरण कर्मचारी के किस अंग की रक्षा करता है?",
+     ["Head","Hands","Eyes","Feet"],["सिर","हाथ","आँखें","पैर"],0,1)]),
+ ]))
+
+# ------------------------------------------------------------------ Electrician
+QPS.append(dict(id="qp_elec", key="elec", title="Electrician (Domestic Solutions)", title_hi="इलेक्ट्रीशियन (घरेलू)",
+ code="ILL/Q0201", nsqf=4, sector="Electrical", desc="Plans, installs and repairs domestic electrical wiring and fittings safely.",
+ nos=[
+ dict(title="Plan and install domestic wiring", title_hi="घरेलू वायरिंग की योजना और स्थापना", core=True, bridge="Domestic wiring practicum",
+  kw="wiring conduit concealed cable gauge load circuit switch socket fan point bijli wire taar",
+  desc="Plan circuits, select cables and install concealed or surface wiring.",
+  pcs=[P("Plan circuits and calculate load for lighting, fan and power points"),
+       P("Select the correct cable size and colour code for each circuit"),
+       P("Install conduit and concealed wiring with proper bends and joints"),
+       P("Insulate joints and keep live and neutral polarity correct at every switch and socket", True)],
+  items=[
+   M("Which wire colour is conventionally used for the neutral?", "न्यूट्रल के लिए आम तौर पर किस रंग का तार इस्तेमाल होता है?",
+     ["Black","Red","Green","Yellow"],["काला","लाल","हरा","पीला"],0,1),
+   M("The switch must always break which conductor?", "स्विच हमेशा किस तार को काटता है?",
+     ["Live (phase)","Neutral","Earth","Any wire"],["लाइव (फेज़)","न्यूट्रल","अर्थ","कोई भी"],0,2),
+   M("For a typical 16 A power socket circuit in a home, the usual copper cable size is?", "घर में 16 A पावर सॉकेट सर्किट के लिए आम तौर पर तांबे की केबल कितनी मोटी होती है?",
+     ["2.5 sq mm","0.5 sq mm","10 sq mm","0.1 sq mm"],["2.5 वर्ग मिमी","0.5 वर्ग मिमी","10 वर्ग मिमी","0.1 वर्ग मिमी"],0,3),
+   S("A new room needs one fan, two lights and a 16 A socket for an AC. How do you plan the circuits?",
+     "नए कमरे में एक पंखा, दो लाइट और एसी के लिए 16 A सॉकेट चाहिए। आप सर्किट कैसे बनाएँगे?",
+     ["Separate light-fan circuit and a dedicated power circuit for the AC","One thin wire for everything","Run all from one 5 A socket","Join to a neighbour's line"],
+     ["लाइट-पंखे का अलग और एसी के लिए अलग पावर सर्किट","सब कुछ एक पतले तार से","सब एक 5 A सॉकेट से","पड़ोसी की लाइन से जोड़ें"],0,4),
+   O("Order the concealed wiring steps.", "कंसील्ड वायरिंग के चरण क्रम में लगाइए।",
+     ["Mark the layout on walls","Chase walls and fix conduit","Draw wires through the conduit","Fix switches and test insulation"],
+     ["दीवार पर लेआउट चिह्नित करें","दीवार काटकर कंड्यूट लगाएँ","कंड्यूट में तार डालें","स्विच लगाएँ और इन्सुलेशन टेस्ट करें"],3),
+   I("🪛", "This tool is typically used to?", "यह औज़ार आम तौर पर किसलिए है?",
+     ["Tighten switch and socket terminals","Cut pipes","Measure gas","Stitch cloth"],["स्विच-सॉकेट टर्मिनल कसने के लिए","पाइप काटने के लिए","गैस मापने के लिए","कपड़ा सिलने के लिए"],0,1)]),
+ dict(title="Install and test switchboards, MCBs and earthing", title_hi="स्विचबोर्ड, MCB और अर्थिंग की स्थापना और जाँच", core=True, bridge="DB, MCB and earthing lab",
+  kw="switchboard mcb rccb elcb earthing earth pit db distribution board fuse megger tester",
+  desc="Install distribution boards, protective devices and earthing.",
+  pcs=[P("Install the distribution board with correct MCB ratings per circuit"),
+       P("Fit an RCCB/ELCB for shock protection on socket circuits", True),
+       P("Construct and test an earth pit and connect all metal bodies"),
+       P("Test insulation resistance and continuity before energising")],
+  items=[
+   M("What does an MCB primarily protect against?", "MCB मुख्यतः किससे बचाता है?",
+     ["Overload and short circuit","Dust","Voltage rise from sun","Loose switch cover"],["ओवरलोड और शॉर्ट सर्किट","धूल","धूप से वोल्टेज बढ़ना","स्विच कवर ढीला होना"],0,1),
+   M("An RCCB mainly protects against?", "RCCB मुख्यतः किससे सुरक्षा देता है?",
+     ["Earth leakage / electric shock","Low voltage","Thread breakage","Water hammer"],["अर्थ लीकेज / बिजली का झटका","लो वोल्टेज","धागा टूटना","पानी का झटका"],0,2),
+   M("Which instrument checks insulation resistance?", "इन्सुलेशन रेज़िस्टेंस कौन सा यंत्र जाँचता है?",
+     ["Megger","Spirit level","Pipe wrench","Tape measure"],["मेगर","स्पिरिट लेवल","पाइप रिंच","टेप"],0,3),
+   S("A customer's metal geyser body gives a mild tingle when touched. What is the likely cause and action?",
+     "ग्राहक के गीज़र की धातु बॉडी छूने पर हल्का झटका देती है। संभावित कारण और कार्रवाई क्या है?",
+     ["Poor earthing; isolate, fix earth and fit RCCB","Normal; ignore","Replace the tap","Paint the geyser"],
+     ["अर्थिंग खराब; बिजली बंद करें, अर्थ ठीक करें और RCCB लगाएँ","सामान्य है; अनदेखा करें","नल बदलें","गीज़र रंग दें"],0,3),
+   O("Order the earthing installation steps.", "अर्थिंग लगाने के चरण क्रम में लगाइए।",
+     ["Dig the earth pit","Place the electrode with charcoal and salt layers","Connect the earth conductor to the electrode","Measure earth resistance"],
+     ["अर्थ पिट खोदें","इलेक्ट्रोड को कोयले और नमक की परत के साथ रखें","अर्थ तार को इलेक्ट्रोड से जोड़ें","अर्थ रेज़िस्टेंस मापें"],4),
+   I("🧰", "A tester and other items in this kit are used for?", "इस किट के टेस्टर आदि किसके लिए हैं?",
+     ["Checking and installing electrical work","Cooking","Painting","Sewing"],["बिजली का काम जाँचने और लगाने के लिए","खाना बनाने के लिए","पेंट करने के लिए","सिलाई के लिए"],0,1)]),
+ dict(title="Diagnose and repair electrical faults and fans", title_hi="बिजली की खराबी और पंखे की मरम्मत", core=True, bridge="Fault finding and motor repair workshop",
+  kw="fault short circuit tripping fan motor winding capacitor repair ceiling fan khrabi theek",
+  desc="Locate faults in circuits and repair fans and small appliances.",
+  pcs=[P("Isolate supply and locate short circuit and open circuit faults using a tester or multimeter", True),
+       P("Diagnose a slow or humming ceiling fan and replace the capacitor or bearing"),
+       P("Rewind or replace a burnt small motor winding where required"),
+       P("Test the repaired circuit and record the repair")],
+  items=[
+   M("A ceiling fan runs slowly and hums. The most likely cause is?", "सीलिंग फैन धीरे चलता है और भनभनाता है। सबसे संभावित कारण क्या है?",
+     ["Weak capacitor or worn bearing","Wrong wall colour","Long blades","New regulator knob"],["कमज़ोर कैपेसिटर या घिसा बेयरिंग","दीवार का गलत रंग","लंबी पंखुड़ियाँ","नया रेगुलेटर नॉब"],0,2),
+   M("A breaker trips instantly when switched on. This indicates?", "ब्रेकर चालू करते ही ट्रिप हो जाता है। यह किसका संकेत है?",
+     ["Short circuit or earth fault","Low humidity","Too many bulbs off","Cold weather"],["शॉर्ट सर्किट या अर्थ फॉल्ट","कम नमी","बल्ब बंद होना","ठंड का मौसम"],0,2),
+   M("Before touching any faulty circuit you must?", "किसी भी खराब सर्किट को छूने से पहले क्या करना चाहिए?",
+     ["Isolate and verify dead with a tester","Touch to check","Wet the wire","Remove the earth"],["बिजली बंद करके टेस्टर से सुनिश्चित करें","छूकर देखें","तार गीला करें","अर्थ हटाएँ"],0,1),
+   S("Lights in one room are dim and flicker when the iron is switched on in the same circuit. What do you suspect?",
+     "एक कमरे की लाइट प्रेस चालू करने पर मद्धम होकर टिमटिमाती है। आपको क्या शक होगा?",
+     ["Loose neutral or overloaded circuit","Bulb colour","Dust on the switch plate","Cold wires"],["ढीला न्यूट्रल या ओवरलोड सर्किट","बल्ब का रंग","स्विच प्लेट पर धूल","तार ठंडे होना"],0,4),
+   O("Order a basic fault-finding routine.", "फॉल्ट ढूँढने की बुनियादी प्रक्रिया क्रम में लगाइए।",
+     ["Isolate the supply","Visually inspect wiring and connectors","Test continuity and insulation","Repair and re-test"],
+     ["सप्लाई बंद करें","तार और कनेक्टर देखें","कंटिन्यूटी और इन्सुलेशन जाँचें","मरम्मत करके दोबारा जाँचें"],3),
+   I("🪛", "Which task suits this tool during repair?", "मरम्मत में यह औज़ार किस काम का है?",
+     ["Opening fan regulator and terminal screws","Cutting tiles","Pumping tyres","Sharpening needles"],["रेगुलेटर और टर्मिनल के पेच खोलना","टाइल काटना","टायर में हवा भरना","सुई तेज़ करना"],0,1)]),
+ dict(title="Safety and customer interaction", title_hi="सुरक्षा और ग्राहक से व्यवहार", core=False, bridge="Electrical safety and soft skills",
+  kw="safety ppe insulated gloves customer estimate first aid shock suraksha",
+  desc="Follow electrical safety rules and communicate clearly.",
+  pcs=[P("Use insulated tools and PPE and lock out the supply before work", True),
+       P("Give a clear estimate and explain the work to the customer"),
+       P("Apply first aid for electric shock and call for help")],
+  items=[
+   M("The first action when someone is stuck to a live wire?", "कोई लाइव तार से चिपक जाए तो सबसे पहले क्या करें?",
+     ["Switch off the supply, then separate using dry insulation","Pull them by hand","Pour water","Run away"],["सप्लाई बंद करें, फिर सूखे इन्सुलेटर से अलग करें","हाथ से खींचें","पानी डालें","भाग जाएँ"],0,2),
+   M("Which footwear is best while working on live boards?", "लाइव बोर्ड पर काम करते समय कौन सा जूता बेहतर है?",
+     ["Insulated safety shoes","Wet sandals","Bare feet","Metal-toe slippers"],["इन्सुलेटेड सेफ्टी जूते","गीली चप्पल","नंगे पैर","धातु वाली चप्पल"],0,1),
+   M("An estimate to the customer should be?", "ग्राहक को अनुमान कैसा देना चाहिए?",
+     ["Clear, itemised and agreed before work","Hidden","Verbal only after the work","Changed secretly"],["स्पष्ट, मदवार और काम से पहले तय","छुपा हुआ","काम के बाद सिर्फ ज़बानी","चुपचाप बदला हुआ"],0,1),
+   S("You find a damaged old wire you were not asked to check. What do you do?", "आपको एक पुराना क्षतिग्रस्त तार दिखता है जिसे जाँचने को नहीं कहा गया। आप क्या करेंगे?",
+     ["Report it to the customer and recommend replacement","Ignore","Tape and hide it","Remove it without telling"],["ग्राहक को बताएँ और बदलने की सलाह दें","अनदेखा करें","टेप लगाकर छुपाएँ","बिना बताए निकालें"],0,3),
+   O("Order the lock-out routine.", "लॉक-आउट प्रक्रिया क्रम में लगाइए।",
+     ["Switch off the main","Lock or tag the isolator","Test dead with a tester","Begin work"],["मेन बंद करें","आइसोलेटर पर लॉक या टैग लगाएँ","टेस्टर से डेड सुनिश्चित करें","काम शुरू करें"],2),
+   I("🧤", "These are worn to protect?", "इन्हें किसकी सुरक्षा के लिए पहना जाता है?",
+     ["Hands","Ears","Eyes","Knees"],["हाथ","कान","आँखें","घुटने"],0,1)]),
+ ]))
+
+# ------------------------------------------------------------------ Sewing
+QPS.append(dict(id="qp_sew", key="sew", title="Sewing Machine Operator (Apparel)", title_hi="सिलाई मशीन ऑपरेटर (परिधान)",
+ code="ILL/Q0301", nsqf=4, sector="Apparel", desc="Operates industrial and domestic sewing machines to stitch garments to quality standards.",
+ nos=[
+ dict(title="Set up and maintain the sewing machine", title_hi="सिलाई मशीन की सेटिंग और रखरखाव", core=True, bridge="Machine setup and maintenance clinic",
+  kw="machine needle bobbin tension oiling threading stitch length silai machine maintenance",
+  desc="Thread, adjust tension, change needles and oil the machine.",
+  pcs=[P("Thread the machine and wind the bobbin correctly"),
+       P("Select the needle by fabric and adjust thread tension and stitch length"),
+       P("Clean and oil the machine and change worn needles"),
+       P("Stop the machine and report abnormal noise or skipped stitches", True)],
+  items=[
+   M("Skipped stitches are most often caused by?", "टाँके छूटने का सबसे आम कारण क्या है?",
+     ["Blunt or wrong needle","Too much light","Cold room","Long table"],["भोथरी या गलत सुई","ज़्यादा रोशनी","ठंडा कमरा","लंबी मेज़"],0,2),
+   M("Loops on the underside of the fabric usually mean?", "कपड़े के नीचे की ओर फंदे बनना आम तौर पर क्या दर्शाता है?",
+     ["Upper thread tension too loose","Bobbin too full of oil","Needle too short","Fabric too clean"],["ऊपरी धागे का तनाव ढीला","बॉबिन में तेल ज़्यादा","सुई बहुत छोटी","कपड़ा बहुत साफ़"],0,2),
+   M("A thicker denim fabric needs?", "मोटे डेनिम कपड़े के लिए क्या चाहिए?",
+     ["A heavier needle size","A very fine needle","No needle","A larger bobbin"],["मोटी सुई का नंबर","बहुत बारीक सुई","बिना सुई","बड़ी बॉबिन"],0,2),
+   S("The machine suddenly makes a loud knocking noise while stitching. What do you do?", "सिलाई करते समय मशीन अचानक ज़ोर से खटखट करने लगती है। आप क्या करेंगे?",
+     ["Stop, switch off, check needle and hook area and report","Keep stitching faster","Press the pedal harder","Cover the sound"],["रुकें, बंद करें, सुई और हुक देखें और बताएँ","तेज़ सिलते रहें","पैडल और दबाएँ","आवाज़ छुपाएँ"],0,3),
+   O("Order the threading and start-up steps.", "धागा डालने और शुरू करने के चरण क्रम में लगाइए।",
+     ["Raise the presser foot","Thread through the guides and take-up lever","Insert the bobbin and pull up its thread","Test-stitch on scrap fabric"],
+     ["प्रेसर फुट ऊपर करें","गाइड और टेक-अप लीवर से धागा निकालें","बॉबिन डालें और उसका धागा ऊपर खींचें","कतरन पर टेस्ट सिलाई करें"],3),
+   I("🧵", "This item is used as?", "यह वस्तु किस रूप में इस्तेमाल होती है?",
+     ["Stitching thread","Cutting tool","Measuring tape","Needle oil"],["सिलाई का धागा","काटने का औज़ार","नापने का फीता","सुई का तेल"],0,1)]),
+ dict(title="Stitch garment components", title_hi="परिधान के हिस्से सिलना", core=True, bridge="Garment stitching practicum",
+  kw="stitching seam hemming collar sleeve shirt trouser blouse kurta silai darzi pattern cutting measurement",
+  desc="Cut as per pattern and stitch seams, hems and components to specification.",
+  pcs=[P("Read measurements and pattern and cut components with correct grain"),
+       P("Stitch plain, french and flat-felled seams with uniform stitch density"),
+       P("Attach collars, sleeves, plackets and waistbands accurately"),
+       P("Hem and finish edges without puckering")],
+  items=[
+   M("The seam allowance in a garment is?", "परिधान में सीम अलाउंस क्या है?",
+     ["Extra fabric beyond the stitching line","The thread cost","The needle size","The button count"],["सिलाई रेखा के बाहर अतिरिक्त कपड़ा","धागे की कीमत","सुई का नंबर","बटन की संख्या"],0,1),
+   M("Puckering at a seam is usually due to?", "सीम पर सिकुड़न आम तौर पर किस कारण से होती है?",
+     ["Too tight thread tension or wrong needle","Too much cloth","Blue thread","Long sleeves"],["धागे का ज़्यादा तनाव या गलत सुई","कपड़ा ज़्यादा","नीला धागा","लंबी आस्तीन"],0,2),
+   M("A flat-felled seam is typically used on?", "फ्लैट-फेल्ड सीम आम तौर पर कहाँ इस्तेमाल होती है?",
+     ["Jeans and shirts","Paper bags","Hair bands","Rope"],["जींस और शर्ट","कागज़ के थैले","हेयर बैंड","रस्सी"],0,3),
+   S("A bundle of 50 shirt collars shows uneven points after stitching. What do you do?", "50 शर्ट कॉलर के बंडल में सिलाई के बाद कोने असमान हैं। आप क्या करेंगे?",
+     ["Stop, check cutting and stitching guide and correct before continuing","Continue and hope","Throw all away","Hide defects"],["रुकें, कटिंग और गाइड जाँचें और सुधार कर आगे बढ़ें","चलने दें","सब फेंक दें","कमी छुपाएँ"],0,3),
+   O("Order the steps to make a basic shirt sleeve.", "बुनियादी शर्ट की आस्तीन बनाने के चरण क्रम में लगाइए।",
+     ["Cut the sleeve pieces","Stitch the sleeve seam","Attach the cuff or hem","Set the sleeve into the armhole"],
+     ["आस्तीन के टुकड़े काटें","आस्तीन की सीम सिलें","कफ़ या हेम लगाएँ","आस्तीन को आर्महोल में जोड़ें"],3),
+   I("✂️", "These are mainly used for?", "ये मुख्यतः किसके लिए हैं?",
+     ["Cutting fabric","Drilling walls","Measuring gas","Tightening nuts"],["कपड़ा काटना","दीवार में छेद","गैस मापना","नट कसना"],0,1)]),
+ dict(title="Quality checking and finishing", title_hi="गुणवत्ता जाँच और फिनिशिंग", core=False, bridge="Quality and finishing basics",
+  kw="quality finishing ironing thread trimming packing defect inspection",
+  desc="Inspect garments, fix defects, trim, press and pack.",
+  pcs=[P("Inspect stitched garments against measurement and defect checklists"),
+       P("Trim loose threads and press garments at the correct temperature"),
+       P("Fold, tag and pack garments as per buyer instructions")],
+  items=[
+   M("Which is a major sewing defect?", "इनमें से कौन सा प्रमुख सिलाई दोष है?",
+     ["Open seam","Neat hem","Even stitching","Clean press"],["खुली सीम","सुघड़ हेम","एकसार सिलाई","साफ़ प्रेस"],0,1),
+   M("Pressing synthetic fabric needs?", "सिंथेटिक कपड़े की प्रेस के लिए क्या चाहिए?",
+     ["Low temperature with a press cloth","Very hot iron directly","Water poured on it","No iron"],["कम तापमान और प्रेस कपड़ा","बहुत गरम प्रेस सीधे","पानी डालना","प्रेस नहीं"],0,2),
+   M("Garment measurements are checked against?", "परिधान की माप किससे मिलाई जाती है?",
+     ["The size chart or spec sheet","A guess","Another worker's choice","Colour"],["साइज़ चार्ट या स्पेक शीट","अंदाज़ा","दूसरे कारीगर की पसंद","रंग"],0,1),
+   S("You find a stain on a finished garment at packing. What do you do?", "पैकिंग में तैयार कपड़े पर दाग दिखता है। आप क्या करेंगे?",
+     ["Separate it and report it to the supervisor","Pack it anyway","Hide it with a tag","Throw it in the bin"],["अलग करें और सुपरवाइज़र को बताएँ","फिर भी पैक करें","टैग से छुपाएँ","कूड़े में डालें"],0,3),
+   O("Order finishing steps.", "फिनिशिंग के चरण क्रम में लगाइए।",
+     ["Trim threads","Inspect for defects","Press","Fold, tag and pack"],["धागे काटें","दोष जाँचें","प्रेस करें","मोड़ें, टैग लगाएँ और पैक करें"],2),
+   I("🧵", "In finishing this must be trimmed from the garment?", "फिनिशिंग में कपड़े से यह क्या काटना होता है?",
+     ["Loose threads","Buttons","Seams","Labels"],["ढीले धागे","बटन","सीम","लेबल"],0,1)]),
+ dict(title="Health, safety and productivity at the workstation", title_hi="कार्यस्थल पर स्वास्थ्य, सुरक्षा और उत्पादकता", core=False, bridge="Workplace safety and productivity",
+  kw="safety finger guard posture target productivity ergonomics suraksha",
+  desc="Work safely and meet daily targets.",
+  pcs=[P("Keep fingers clear of the needle and use guards", True),
+       P("Maintain posture and take breaks to avoid strain"),
+       P("Plan the day to meet the production target with quality")],
+  items=[
+   M("The needle guard is used to?", "नीडल गार्ड किसलिए होता है?",
+     ["Protect fingers from the needle","Hold the thread","Cool the motor","Cut cloth"],["उंगलियों को सुई से बचाने के लिए","धागा पकड़ने के लिए","मोटर ठंडा करने के लिए","कपड़ा काटने के लिए"],0,1),
+   M("Good seating posture while sewing is?", "सिलाई करते समय बैठने की अच्छी मुद्रा क्या है?",
+     ["Back supported, feet flat, work at elbow height","Bent forward all day","Standing on one leg","Lying down"],["पीठ को सहारा, पैर सपाट, कोहनी की ऊँचाई पर काम","पूरे दिन झुककर","एक पैर पर खड़े","लेटकर"],0,1),
+   M("Why log machine breakdowns?", "मशीन की खराबी क्यों दर्ज करनी चाहिए?",
+     ["So repairs are planned and targets adjusted","To hide them","For no reason","To increase noise"],["ताकि मरम्मत की योजना बने और लक्ष्य सुधरे","छुपाने के लिए","बिना कारण","शोर बढ़ाने के लिए"],0,2),
+   S("You are behind on the target but the machine guard is loose. What do you do?", "आप लक्ष्य से पीछे हैं और मशीन का गार्ड ढीला है। क्या करेंगे?",
+     ["Fix or report the guard before continuing","Remove the guard to go faster","Ignore it","Tape it"],["गार्ड ठीक करें या बताएँ, फिर काम करें","तेज़ी के लिए गार्ड हटाएँ","अनदेखा करें","टेप लगाएँ"],0,3),
+   O("Order a safe start-of-shift routine.", "शिफ्ट शुरू करने की सुरक्षित प्रक्रिया क्रम में लगाइए।",
+     ["Check the guard and light","Clean and oil lightly","Test-stitch","Begin production"],["गार्ड और रोशनी जाँचें","हल्की सफाई और तेल","टेस्ट सिलाई","उत्पादन शुरू करें"],3),
+   I("🧯", "This equipment is used in case of?", "यह उपकरण किस स्थिति में काम आता है?",
+     ["Fire","Flood","Wind","Cold"],["आग","बाढ़","हवा","ठंड"],0,1)]),
+ ]))
+
+# ------------------------------------------------------------------ Plumber
+QPS.append(dict(id="qp_plumb", key="plumb", title="Plumber (General)", title_hi="प्लंबर (सामान्य)",
+ code="ILL/Q0401", nsqf=3, sector="Construction", desc="Installs and repairs water supply, sanitary fixtures and drainage in buildings.",
+ nos=[
+ dict(title="Install water supply pipes and fittings", title_hi="पानी की सप्लाई पाइप और फिटिंग लगाना", core=True, bridge="Water supply piping practicum",
+  kw="pipe fitting pvc cpvc gi upvc tap valve tank threading teflon solvent cement nal pipe lagana geyser",
+  desc="Lay and join pipes, install valves, taps and overhead tanks.",
+  pcs=[P("Read the layout and mark pipe routes with correct slopes and supports"),
+       P("Cut, thread and join GI pipes and fit PVC/CPVC pipes using solvent cement"),
+       P("Install valves, taps and overhead tank connections without leaks", True),
+       P("Pressure-test the supply line before closing walls")],
+  items=[
+   M("Which tape is used on threaded GI joints to seal?", "थ्रेडेड GI जोड़ों को सील करने के लिए कौन सा टेप इस्तेमाल होता है?",
+     ["PTFE (teflon) tape","Electrical tape","Paper tape","Duct tape"],["PTFE (टेफ़लॉन) टेप","इलेक्ट्रिकल टेप","कागज़ का टेप","डक्ट टेप"],0,1),
+   M("CPVC pipes are preferred for?", "CPVC पाइप किसके लिए पसंद किए जाते हैं?",
+     ["Hot and cold water lines","Only sewage","Electric wiring","Gas cylinders"],["गरम और ठंडे पानी की लाइन","सिर्फ सीवर","बिजली की वायरिंग","गैस सिलेंडर"],0,2),
+   M("Before closing walls over a new supply line you should?", "नई सप्लाई लाइन पर दीवार बंद करने से पहले क्या करना चाहिए?",
+     ["Pressure-test it","Paint the wall","Add more bends","Remove the valve"],["उसका प्रेशर टेस्ट करें","दीवार पेंट करें","और मोड़ जोड़ें","वाल्व निकाल दें"],0,2),
+   S("After fitting a new tap, a slow drip appears at the threaded joint. What do you do?", "नया नल लगाने के बाद थ्रेडेड जोड़ से धीरे-धीरे पानी टपकता है। आप क्या करेंगे?",
+     ["Close supply, remove, re-wrap PTFE tape and refit","Wrap a cloth around it","Overtighten with a long pipe","Ignore it"],["सप्लाई बंद करें, खोलें, PTFE टेप दोबारा लपेटकर कसें","कपड़ा लपेटें","लंबे पाइप से ज़्यादा कसें","अनदेखा करें"],0,3),
+   O("Order the steps to install a PVC water line.", "PVC पानी लाइन लगाने के चरण क्रम में लगाइए।",
+     ["Mark the route","Cut and clean the pipe ends","Apply solvent cement and join","Pressure-test the line"],
+     ["रास्ता चिह्नित करें","पाइप के सिरे काटें और साफ़ करें","सॉल्वेंट सीमेंट लगाकर जोड़ें","लाइन का प्रेशर टेस्ट करें"],3),
+   I("🚰", "This fixture is a?", "यह फिक्सचर क्या है?",
+     ["Water tap","Switch","Fan","Lamp"],["पानी का नल","स्विच","पंखा","लैंप"],0,1)]),
+ dict(title="Install sanitary fixtures and drainage", title_hi="सैनिटरी फिक्सचर और ड्रेनेज लगाना", core=True, bridge="Sanitary fixtures and drainage lab",
+  kw="drain sewer trap commode toilet wash basin flush tank gradient waste pipe nali bathroom",
+  desc="Fix WC, basin, sink and connect waste lines with correct gradient and traps.",
+  pcs=[P("Fix wash basin, sink and WC at the correct height and level"),
+       P("Lay waste pipes with the correct gradient and fit water-seal traps", True),
+       P("Provide vents and clean-outs and connect to the soil line"),
+       P("Test fixtures for flushing and leakage")],
+  items=[
+   M("What is the purpose of a water-seal trap?", "वाटर-सील ट्रैप का उद्देश्य क्या है?",
+     ["Block sewer gas from entering the room","Increase water pressure","Heat the water","Store water"],["सीवर गैस को कमरे में आने से रोकना","पानी का दबाव बढ़ाना","पानी गरम करना","पानी जमा करना"],0,1),
+   M("Waste pipes must be laid with?", "वेस्ट पाइप किस तरह बिछाई जानी चाहिए?",
+     ["A continuous downward gradient","A upward slope","No slope","Random slope"],["लगातार नीचे की ओर ढलान","ऊपर की ओर ढलान","बिना ढलान","जैसी भी ढलान"],0,2),
+   M("A vent pipe in a drainage system mainly?", "ड्रेनेज सिस्टम में वेंट पाइप मुख्यतः क्या करता है?",
+     ["Allows air to prevent siphoning of traps","Supplies hot water","Stores waste","Increases pressure"],["हवा देकर ट्रैप का पानी खिंचने से रोकता है","गरम पानी देता है","कचरा जमा करता है","दबाव बढ़ाता है"],0,3),
+   S("A newly fitted wash basin drains very slowly. What do you check first?", "नया लगाया वॉश बेसिन बहुत धीरे खाली होता है। पहले क्या जाँचेंगे?",
+     ["Waste pipe gradient, trap and blockage","Basin colour","Tap handle","Wall paint"],["वेस्ट पाइप की ढलान, ट्रैप और ब्लॉकेज","बेसिन का रंग","नल का हैंडल","दीवार का पेंट"],0,3),
+   O("Order the steps to install a wash basin.", "वॉश बेसिन लगाने के चरण क्रम में लगाइए।",
+     ["Mark height and level","Fix brackets or pedestal","Connect tap and waste with trap","Test for leaks"],
+     ["ऊँचाई और लेवल चिह्नित करें","ब्रैकेट या पेडेस्टल लगाएँ","नल और ट्रैप के साथ वेस्ट जोड़ें","लीक जाँचें"],3),
+   I("🪠", "This tool is mainly used to?", "यह औज़ार मुख्यतः किसलिए है?",
+     ["Clear blocked drains","Cut pipes","Weld metal","Drill walls"],["बंद नाली खोलना","पाइप काटना","धातु जोड़ना","दीवार में छेद"],0,1)]),
+ dict(title="Detect and repair leakages and blockages", title_hi="रिसाव और ब्लॉकेज पहचानना और ठीक करना", core=False, bridge="Leak detection and repair clinic",
+  kw="leak leakage washer repair blockage choke tap tapakna risav plunger pipe wrench",
+  desc="Find leaks and clear blockages.",
+  pcs=[P("Locate the source of a leak using visual checks and pressure tests"),
+       P("Replace washers, cartridges and damaged pipe sections"),
+       P("Clear blocked drains using rods or plungers without damaging pipes")],
+  items=[
+   M("A dripping tap most often needs a new?", "टपकते नल में आम तौर पर क्या बदलना होता है?",
+     ["Washer or cartridge","Wall tile","Electric wire","Basin"],["वॉशर या कार्ट्रिज","दीवार की टाइल","बिजली का तार","बेसिन"],0,1),
+   M("Which is the first step to repair a burst pipe?", "फटी पाइप की मरम्मत का पहला कदम क्या है?",
+     ["Close the supply valve","Pour cement","Open all taps","Weld at once"],["सप्लाई वाल्व बंद करें","सीमेंट डालें","सारे नल खोलें","तुरंत वेल्ड करें"],0,1),
+   M("Using strong acid on a PVC drain blockage is?", "PVC नाली के ब्लॉकेज में तेज़ तेज़ाब डालना कैसा है?",
+     ["Unsafe; it can damage pipes and hurt you","The best method","Required by law","Harmless"],["असुरक्षित; पाइप और आपको नुकसान हो सकता है","सबसे अच्छा तरीका","कानूनन ज़रूरी","हानिरहित"],0,2),
+   S("A ceiling stain appears below a bathroom. What is your approach?", "बाथरूम के नीचे छत पर दाग दिखता है। आपका तरीका क्या होगा?",
+     ["Isolate water, trace the leak from above and test lines","Paint over it","Break the whole ceiling","Ignore it"],["पानी बंद करें, ऊपर से रिसाव खोजें और लाइन जाँचें","ऊपर से रंग दें","पूरी छत तोड़ दें","अनदेखा करें"],0,3),
+   O("Order a leak repair routine.", "रिसाव मरम्मत प्रक्रिया क्रम में लगाइए।",
+     ["Close the supply","Locate the leak","Repair or replace the part","Open supply and test"],["सप्लाई बंद करें","रिसाव खोजें","हिस्सा सुधारें या बदलें","सप्लाई खोलकर जाँचें"],2),
+   I("🔧", "This tool is used to?", "यह औज़ार किसलिए है?",
+     ["Grip and turn pipes and fittings","Stitch cloth","Measure volts","Sand wood"],["पाइप और फिटिंग पकड़कर घुमाना","कपड़ा सिलना","वोल्ट मापना","लकड़ी घिसना"],0,1)]),
+ dict(title="Safe work practice and customer handling", title_hi="सुरक्षित कार्य पद्धति और ग्राहक व्यवहार", core=False, bridge="Safety and customer handling",
+  kw="safety ppe gloves trench customer billing hygiene water waste suraksha",
+  desc="Follow safety, hygiene and customer communication.",
+  pcs=[P("Use PPE and safe practices in trenches and confined spaces", True),
+       P("Protect floors and fixtures and clean up after work"),
+       P("Explain the work and cost to the customer clearly")],
+  items=[
+   M("Before entering a manhole or deep trench you must?", "मैनहोल या गहरी खाई में उतरने से पहले क्या ज़रूरी है?",
+     ["Check air safety and have a standby person","Go alone quickly","Smoke to check air","Close your eyes"],["हवा की सुरक्षा जाँचें और एक सहायक रखें","अकेले जल्दी उतरें","सिगरेट से हवा जाँचें","आँखें बंद करें"],0,2),
+   M("After finishing work you should?", "काम खत्म करने के बाद क्या करना चाहिए?",
+     ["Clean the area and remove waste","Leave debris","Hide tools","Leave quietly"],["जगह साफ़ करें और कचरा हटाएँ","मलबा छोड़ दें","औज़ार छुपाएँ","चुपचाप चले जाएँ"],0,1),
+   M("Gloves while handling waste pipes protect against?", "वेस्ट पाइप संभालते समय दस्ताने किससे बचाते हैं?",
+     ["Contamination and cuts","Rain","Cold","Noise"],["संक्रमण और कट","बारिश","ठंड","शोर"],0,1),
+   S("The customer disputes the quoted cost after work. What is best?", "काम के बाद ग्राहक कीमत पर विवाद करता है। सबसे अच्छा क्या है?",
+     ["Show the itemised estimate agreed earlier and discuss politely","Argue loudly","Remove the fitted tap","Leave without answer"],["पहले तय मदवार अनुमान दिखाकर विनम्रता से बात करें","ज़ोर से बहस करें","लगा हुआ नल निकाल लें","बिना जवाब चले जाएँ"],0,3),
+   O("Order the job close-out steps.", "काम पूरा करने के चरण क्रम में लगाइए।",
+     ["Test the work","Clean the area","Explain the work to the customer","Collect payment and receipt"],["काम जाँचें","जगह साफ़ करें","ग्राहक को काम समझाएँ","भुगतान और रसीद लें"],3),
+   I("⛑️", "This is worn to protect the?", "यह किसकी सुरक्षा के लिए पहना जाता है?",
+     ["Head","Hands","Eyes","Ears"],["सिर","हाथ","आँखें","कान"],0,1)]),
+ ]))
+
+
+def build():
+    qps, items = [], []
+    for q in QPS:
+        qo = dict(id=q["id"], title=q["title"], title_hi=q["title_hi"], code=q["code"], nsqf_level=q["nsqf"],
+                  sector=q["sector"], description=q["desc"], disclaimer=DISC, nos=[])
+        for ni, n in enumerate(q["nos"], 1):
+            nid = f"{q['key']}.n{ni}"
+            no = dict(id=nid, code=f"{q['code']}/N{ni:02d}", title=n["title"], title_hi=n["title_hi"], core=n["core"],
+                      description=n["desc"], keywords=n["kw"], bridge_module=n["bridge"], pcs=[])
+            for pi, (t, c) in enumerate(n["pcs"], 1):
+                no["pcs"].append(dict(id=f"{nid}.p{pi}", nos_id=nid, text=t, critical=c))
+            qo["nos"].append(no)
+            for ii, it in enumerate(n["items"], 1):
+                d = dict(id=f"{nid}.i{ii}", nos_id=nid, qp_id=q["id"], type=it["type"], difficulty=it["d"])
+                if it["type"] == "ordering":
+                    perm = [2, 0, 3, 1]
+                    shown_en = [it["steps"][k] for k in perm]
+                    shown_hi = [it["stepsh"][k] for k in perm]
+                    d["prompt"] = dict(en=it["q"], hi=it["qh"])
+                    d["options"] = dict(en=shown_en, hi=shown_hi)
+                    d["answer"] = [perm.index(k) for k in range(4)]
+                else:
+                    d["prompt"] = dict(en=it["q"], hi=it["qh"])
+                    r = (ni * 3 + ii * 5 + len(q["key"])) % 4  # deterministic rotation so the answer is not always first
+                    rot = lambda lst: [lst[(k - r) % len(lst)] for k in range(len(lst))]
+                    d["options"] = dict(en=rot(it["o"]), hi=rot(it["oh"]))
+                    d["answer"] = (it["c"] + r) % len(it["o"])
+                    if it["type"] == "image-id":
+                        d["image"] = it["img"]
+                items.append(d)
+        qps.append(qo)
+    (OUT / "qps.json").write_text(json.dumps(dict(disclaimer=DISC, qps=qps), ensure_ascii=False, indent=1))
+    (OUT / "items.json").write_text(json.dumps(dict(disclaimer=DISC, items=items), ensure_ascii=False, indent=1))
+    print(len(qps), "qps", sum(len(q["nos"]) for q in qps), "nos", len(items), "items")
+
+if __name__ == "__main__":
+    build()

@@ -1,0 +1,2759 @@
+{
+ "disclaimer": "Illustrative content, modelled on public NSQF qualification packs. Not an official QP.",
+ "items": [
+  {
+   "id": "ac.n1.i1",
+   "nos_id": "ac.n1",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Why should the indoor unit drain pipe slope downward?",
+    "hi": "इनडोर यूनिट की ड्रेन पाइप नीचे की ओर ढलान में क्यों रखी जाती है?"
+   },
+   "options": {
+    "en": [
+     "To reduce noise",
+     "To cool the room faster",
+     "So condensate water drains out by gravity",
+     "To increase gas pressure"
+    ],
+    "hi": [
+     "आवाज़ कम करने के लिए",
+     "कमरा जल्दी ठंडा करने के लिए",
+     "ताकि पानी गुरुत्वाकर्षण से बाहर निकले",
+     "गैस का दबाव बढ़ाने के लिए"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "ac.n1.i2",
+   "nos_id": "ac.n1",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Which tool removes air and moisture from the piping before the valves are opened?",
+    "hi": "वाल्व खोलने से पहले पाइप से हवा और नमी कौन सा औज़ार निकालता है?"
+   },
+   "options": {
+    "en": [
+     "Torque wrench",
+     "Multimeter",
+     "Pipe cutter",
+     "Vacuum pump"
+    ],
+    "hi": [
+     "टॉर्क रिंच",
+     "मल्टीमीटर",
+     "पाइप कटर",
+     "वैक्यूम पंप"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "ac.n1.i3",
+   "nos_id": "ac.n1",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "What is normally used to pressure-test AC pipe joints for leaks?",
+    "hi": "एसी पाइप जोड़ों की लीक जांच के लिए आम तौर पर क्या इस्तेमाल होता है?"
+   },
+   "options": {
+    "en": [
+     "Dry nitrogen",
+     "Oxygen",
+     "Plain water",
+     "Hot air"
+    ],
+    "hi": [
+     "सूखी नाइट्रोजन",
+     "ऑक्सीजन",
+     "सादा पानी",
+     "गर्म हवा"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "ac.n1.i4",
+   "nos_id": "ac.n1",
+   "qp_id": "qp_ac",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "You have finished flaring and connecting pipes of a new 1.5 ton split AC. What do you do before opening the service valves?",
+    "hi": "आपने नए 1.5 टन स्प्लिट एसी की पाइप फ्लेयर करके जोड़ दी हैं। सर्विस वाल्व खोलने से पहले आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Tighten the nuts until the pipe deforms",
+     "Pressure-test with nitrogen, then evacuate",
+     "Open the valves and listen for hissing",
+     "Run the compressor to check cooling"
+    ],
+    "hi": [
+     "पाइप दबने तक नट कसेंगे",
+     "नाइट्रोजन से प्रेशर टेस्ट करके फिर वैक्यूम करेंगे",
+     "वाल्व खोलकर सीटी की आवाज़ सुनेंगे",
+     "कंप्रेसर चलाकर ठंडक देखेंगे"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "ac.n1.i5",
+   "nos_id": "ac.n1",
+   "qp_id": "qp_ac",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Arrange the installation steps in order.",
+    "hi": "स्थापना के चरणों को सही क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Connect and leak-test the pipes",
+     "Fix the mounting plate",
+     "Evacuate and open the valves",
+     "Drill the wall hole and route piping"
+    ],
+    "hi": [
+     "पाइप जोड़ें और लीक टेस्ट करें",
+     "माउंटिंग प्लेट लगाएँ",
+     "वैक्यूम करें और वाल्व खोलें",
+     "दीवार में छेद करें और पाइप निकालें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "ac.n1.i6",
+   "nos_id": "ac.n1",
+   "qp_id": "qp_ac",
+   "type": "image-id",
+   "difficulty": 2,
+   "prompt": {
+    "en": "This tool is most often used to tighten which part during AC installation?",
+    "hi": "एसी स्थापना में यह औज़ार आम तौर पर किसे कसने के लिए इस्तेमाल होता है?"
+   },
+   "options": {
+    "en": [
+     "Wall plugs",
+     "Remote batteries",
+     "Air filters",
+     "Flare nuts on copper pipes"
+    ],
+    "hi": [
+     "दीवार के प्लग",
+     "रिमोट की बैटरी",
+     "एयर फिल्टर",
+     "तांबे की पाइप के फ्लेयर नट"
+    ]
+   },
+   "answer": 3,
+   "image": "🔧"
+  },
+  {
+   "id": "ac.n2.i1",
+   "nos_id": "ac.n2",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Low suction pressure with frosting on the indoor coil usually indicates?",
+    "hi": "कम सक्शन प्रेशर और इनडोर कॉइल पर बर्फ जमना आम तौर पर क्या बताता है?"
+   },
+   "options": {
+    "en": [
+     "Dirty outdoor body paint",
+     "Low refrigerant charge or restriction",
+     "Overcharged system",
+     "Faulty remote"
+    ],
+    "hi": [
+     "आउटडोर का पेंट गंदा होना",
+     "गैस कम होना या रुकावट",
+     "गैस ज़्यादा भरी होना",
+     "रिमोट खराब होना"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "ac.n2.i2",
+   "nos_id": "ac.n2",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which information decides the refrigerant quantity to charge?",
+    "hi": "कितनी गैस भरनी है यह किस जानकारी से तय होता है?"
+   },
+   "options": {
+    "en": [
+     "Age of the technician",
+     "Room paint",
+     "Nameplate on the outdoor unit",
+     "Colour of the pipes"
+    ],
+    "hi": [
+     "तकनीशियन की उम्र",
+     "कमरे का रंग",
+     "आउटडोर यूनिट की नेमप्लेट",
+     "पाइप का रंग"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "ac.n2.i3",
+   "nos_id": "ac.n2",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Why is nitrogen purged through the pipe during brazing?",
+    "hi": "ब्रेज़िंग के समय पाइप में नाइट्रोजन क्यों चलाई जाती है?"
+   },
+   "options": {
+    "en": [
+     "To heat the joint faster",
+     "To add refrigerant",
+     "To cool the compressor",
+     "To prevent oxide scale inside the pipe"
+    ],
+    "hi": [
+     "जोड़ जल्दी गरम करने के लिए",
+     "गैस भरने के लिए",
+     "कंप्रेसर ठंडा करने के लिए",
+     "पाइप के अंदर ऑक्साइड जमने से रोकने के लिए"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "ac.n2.i4",
+   "nos_id": "ac.n2",
+   "qp_id": "qp_ac",
+   "type": "scenario",
+   "difficulty": 4,
+   "prompt": {
+    "en": "A customer's AC runs but does not cool and the outdoor fan runs while the compressor hums and trips. What is the safest first check?",
+    "hi": "ग्राहक का एसी चल रहा है पर ठंडा नहीं कर रहा; आउटडोर पंखा चलता है, कंप्रेसर भनभनाकर ट्रिप होता है। सबसे सुरक्षित पहली जाँच क्या है?"
+   },
+   "options": {
+    "en": [
+     "Isolate power and test the run capacitor and compressor windings",
+     "Add more gas immediately",
+     "Bypass the overload protector",
+     "Hit the compressor with a hammer"
+    ],
+    "hi": [
+     "बिजली बंद करके रन कैपेसिटर और कंप्रेसर वाइंडिंग जाँचें",
+     "तुरंत और गैस भरें",
+     "ओवरलोड प्रोटेक्टर बायपास करें",
+     "कंप्रेसर पर हथौड़ा मारें"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "ac.n2.i5",
+   "nos_id": "ac.n2",
+   "qp_id": "qp_ac",
+   "type": "ordering",
+   "difficulty": 4,
+   "prompt": {
+    "en": "Order the refrigerant circuit repair steps.",
+    "hi": "रेफ्रिजरेंट सर्किट मरम्मत के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Pressure-test and evacuate",
+     "Recover remaining refrigerant",
+     "Charge by nameplate weight",
+     "Braze the repaired joint with nitrogen purge"
+    ],
+    "hi": [
+     "प्रेशर टेस्ट करके वैक्यूम करें",
+     "बची हुई गैस रिकवर करें",
+     "नेमप्लेट के वज़न से गैस भरें",
+     "नाइट्रोजन चलाकर जोड़ ब्रेज़ करें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "ac.n2.i6",
+   "nos_id": "ac.n2",
+   "qp_id": "qp_ac",
+   "type": "image-id",
+   "difficulty": 4,
+   "prompt": {
+    "en": "A clip-on thermometer on the AC pipes is mainly used to check?",
+    "hi": "एसी की पाइप पर लगा क्लिप-ऑन थर्मामीटर मुख्यतः क्या जाँचने के लिए है?"
+   },
+   "options": {
+    "en": [
+     "Room humidity",
+     "Fan speed",
+     "Superheat and subcooling",
+     "Voltage"
+    ],
+    "hi": [
+     "कमरे की नमी",
+     "पंखे की गति",
+     "सुपरहीट और सबकूलिंग",
+     "वोल्टेज"
+    ]
+   },
+   "answer": 2,
+   "image": "🌡️"
+  },
+  {
+   "id": "ac.n3.i1",
+   "nos_id": "ac.n3",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "The AC outdoor unit needs which type of supply protection?",
+    "hi": "एसी आउटडोर यूनिट को किस तरह की सप्लाई सुरक्षा चाहिए?"
+   },
+   "options": {
+    "en": [
+     "A dedicated MCB of correct rating with earthing",
+     "No protection needed",
+     "Only a plug top",
+     "A fuse wire of any size"
+    ],
+    "hi": [
+     "सही रेटिंग का अलग MCB और अर्थिंग",
+     "कोई सुरक्षा नहीं",
+     "सिर्फ प्लग टॉप",
+     "कोई भी मोटाई का फ्यूज तार"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "ac.n3.i2",
+   "nos_id": "ac.n3",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "A run capacitor is replaced. The new one must match the old in?",
+    "hi": "रन कैपेसिटर बदलते समय नया किससे मेल खाना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Weight",
+     "µF rating and voltage rating",
+     "Colour only",
+     "Brand name only"
+    ],
+    "hi": [
+     "वज़न",
+     "µF और वोल्टेज रेटिंग",
+     "सिर्फ रंग",
+     "सिर्फ ब्रांड"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "ac.n3.i3",
+   "nos_id": "ac.n3",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which instrument checks AC supply voltage at the outdoor unit terminals?",
+    "hi": "आउटडोर यूनिट टर्मिनल पर सप्लाई वोल्टेज कौन सा यंत्र जाँचता है?"
+   },
+   "options": {
+    "en": [
+     "Spirit level",
+     "Flaring block",
+     "Multimeter",
+     "Vacuum gauge"
+    ],
+    "hi": [
+     "स्पिरिट लेवल",
+     "फ्लेयरिंग ब्लॉक",
+     "मल्टीमीटर",
+     "वैक्यूम गेज"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "ac.n3.i4",
+   "nos_id": "ac.n3",
+   "qp_id": "qp_ac",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "The indoor unit display is blank but the supply at the socket is normal. What do you check first after isolating power?",
+    "hi": "इनडोर यूनिट का डिस्प्ले बंद है पर सॉकेट में सप्लाई सामान्य है। बिजली बंद करके पहले क्या जाँचेंगे?"
+   },
+   "options": {
+    "en": [
+     "Refrigerant pressure",
+     "Drain pipe slope",
+     "Outdoor fan blade",
+     "Board fuse, connector seating and transformer output"
+    ],
+    "hi": [
+     "गैस प्रेशर",
+     "ड्रेन पाइप की ढलान",
+     "आउटडोर पंखे की पंखुड़ी",
+     "बोर्ड का फ्यूज, कनेक्टर और ट्रांसफॉर्मर आउटपुट"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "ac.n3.i5",
+   "nos_id": "ac.n3",
+   "qp_id": "qp_ac",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the safe capacitor replacement steps.",
+    "hi": "कैपेसिटर बदलने के सुरक्षित चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Replace with the same rating",
+     "Switch off and isolate the supply",
+     "Restore supply and test current",
+     "Discharge the old capacitor"
+    ],
+    "hi": [
+     "उसी रेटिंग का नया लगाएँ",
+     "सप्लाई बंद करके आइसोलेट करें",
+     "सप्लाई चालू करके करंट जाँचें",
+     "पुराने कैपेसिटर को डिस्चार्ज करें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "ac.n3.i6",
+   "nos_id": "ac.n3",
+   "qp_id": "qp_ac",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This symbol on a panel warns of?",
+    "hi": "पैनल पर यह चिह्न किस बात की चेतावनी देता है?"
+   },
+   "options": {
+    "en": [
+     "Heavy load",
+     "Electric shock hazard",
+     "Fragile glass",
+     "Wet floor"
+    ],
+    "hi": [
+     "भारी सामान",
+     "बिजली के झटके का खतरा",
+     "काँच टूटने वाला",
+     "गीला फर्श"
+    ]
+   },
+   "answer": 1,
+   "image": "⚡"
+  },
+  {
+   "id": "ac.n4.i1",
+   "nos_id": "ac.n4",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "How often should room AC filters normally be cleaned in dusty areas?",
+    "hi": "धूल वाले इलाके में एसी के फिल्टर आम तौर पर कितनी बार साफ़ करने चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Once in 5 years",
+     "Never",
+     "Only when it breaks",
+     "Every 2 to 4 weeks"
+    ],
+    "hi": [
+     "5 साल में एक बार",
+     "कभी नहीं",
+     "टूटने पर ही",
+     "हर 2 से 4 हफ्ते में"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "ac.n4.i2",
+   "nos_id": "ac.n4",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Which is the safest way to clean condenser fins?",
+    "hi": "कंडेंसर की फिन साफ़ करने का सबसे सुरक्षित तरीका कौन सा है?"
+   },
+   "options": {
+    "en": [
+     "Low-pressure water with fin comb for bent fins",
+     "Wire brush hard scrubbing",
+     "Sharp screwdriver",
+     "Hammering"
+    ],
+    "hi": [
+     "कम प्रेशर का पानी और मुड़े फिन के लिए फिन कॉम्ब",
+     "तार के ब्रश से ज़ोर से रगड़ना",
+     "तेज़ पेचकस",
+     "हथौड़ी से ठोकना"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "ac.n4.i3",
+   "nos_id": "ac.n4",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Water dripping from the indoor unit after service most likely means?",
+    "hi": "सर्विस के बाद इनडोर यूनिट से पानी टपकना अक्सर किसका संकेत है?"
+   },
+   "options": {
+    "en": [
+     "Wrong wall colour",
+     "Blocked or mis-sloped drain",
+     "Overcharged remote",
+     "Loose door"
+    ],
+    "hi": [
+     "दीवार का रंग गलत",
+     "ड्रेन का ब्लॉक या गलत ढलान",
+     "रिमोट ओवरचार्ज",
+     "दरवाज़ा ढीला"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "ac.n4.i4",
+   "nos_id": "ac.n4",
+   "qp_id": "qp_ac",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "During service you notice the outdoor coil is badly corroded. What should you do?",
+    "hi": "सर्विस में आपने देखा कि आउटडोर कॉइल बहुत ज़्यादा जंग खाई है। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Paint over it",
+     "Remove it without telling",
+     "Inform the customer, record it and recommend repair or replacement",
+     "Ignore it"
+    ],
+    "hi": [
+     "ऊपर से पेंट कर दें",
+     "बिना बताए निकाल दें",
+     "ग्राहक को बताएँ, दर्ज करें और मरम्मत या बदलने की सलाह दें",
+     "अनदेखा करें"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "ac.n4.i5",
+   "nos_id": "ac.n4",
+   "qp_id": "qp_ac",
+   "type": "ordering",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Order a basic service routine.",
+    "hi": "बुनियादी सर्विस के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Check drain and fan operation",
+     "Isolate power and cover surroundings",
+     "Record readings and brief the customer",
+     "Clean filters and coils"
+    ],
+    "hi": [
+     "ड्रेन और पंखा जाँचें",
+     "बिजली बंद करें और आसपास ढकें",
+     "रीडिंग दर्ज करें और ग्राहक को बताएँ",
+     "फिल्टर और कॉइल साफ़ करें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "ac.n4.i6",
+   "nos_id": "ac.n4",
+   "qp_id": "qp_ac",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This item on your service visit is mainly for?",
+    "hi": "सर्विस विज़िट में यह वस्तु मुख्यतः किसलिए है?"
+   },
+   "options": {
+    "en": [
+     "Carrying and organising tools",
+     "Cooling the room",
+     "Measuring gas",
+     "Wall painting"
+    ],
+    "hi": [
+     "औज़ार रखना और सजाना",
+     "कमरा ठंडा करना",
+     "गैस मापना",
+     "दीवार रंगना"
+    ]
+   },
+   "answer": 0,
+   "image": "🧰"
+  },
+  {
+   "id": "ac.n5.i1",
+   "nos_id": "ac.n5",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "What is mandatory when fixing an outdoor unit on an upper-floor bracket?",
+    "hi": "ऊपरी मंज़िल पर आउटडोर यूनिट का ब्रैकेट लगाते समय क्या ज़रूरी है?"
+   },
+   "options": {
+    "en": [
+     "Working alone without checking",
+     "Leaning out of window",
+     "Safety harness or secured access",
+     "Wearing slippers"
+    ],
+    "hi": [
+     "बिना जाँचे अकेले काम",
+     "खिड़की से झुककर काम",
+     "सेफ्टी हार्नेस या सुरक्षित पहुँच",
+     "चप्पल पहनना"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "ac.n5.i2",
+   "nos_id": "ac.n5",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Refrigerant should be?",
+    "hi": "रेफ्रिजरेंट को कैसे संभालना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Released outdoors",
+     "Poured in drain",
+     "Burned",
+     "Recovered, not vented to air"
+    ],
+    "hi": [
+     "बाहर छोड़ देना",
+     "नाली में डालना",
+     "जलाना",
+     "रिकवर करना, हवा में नहीं छोड़ना"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "ac.n5.i3",
+   "nos_id": "ac.n5",
+   "qp_id": "qp_ac",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Before starting work you should tell the customer?",
+    "hi": "काम शुरू करने से पहले ग्राहक को क्या बताना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Likely fault, estimate and time needed",
+     "Nothing",
+     "Only your phone number",
+     "Price of another shop"
+    ],
+    "hi": [
+     "संभावित खराबी, अनुमानित खर्च और समय",
+     "कुछ नहीं",
+     "सिर्फ अपना नंबर",
+     "दूसरी दुकान का दाम"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "ac.n5.i4",
+   "nos_id": "ac.n5",
+   "qp_id": "qp_ac",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "The customer wants you to skip the earthing to save money. What do you do?",
+    "hi": "ग्राहक पैसे बचाने के लिए अर्थिंग छोड़ने को कहता है। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Leave quietly",
+     "Explain the shock risk and refuse to skip it",
+     "Skip it",
+     "Skip and charge less"
+    ],
+    "hi": [
+     "चुपचाप चले जाएँ",
+     "झटके का खतरा समझाएँ और अर्थिंग ज़रूर करें",
+     "छोड़ दें",
+     "छोड़कर कम पैसे लें"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "ac.n5.i5",
+   "nos_id": "ac.n5",
+   "qp_id": "qp_ac",
+   "type": "ordering",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Order the safe outdoor-unit work routine.",
+    "hi": "आउटडोर यूनिट काम के सुरक्षित चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Work with a helper holding the unit",
+     "Inspect the ladder or access",
+     "Clean the area and inform the customer",
+     "Wear PPE and harness"
+    ],
+    "hi": [
+     "सहायक के साथ यूनिट पकड़कर काम करें",
+     "सीढ़ी या पहुँच की जाँच करें",
+     "जगह साफ़ करें और ग्राहक को बताएँ",
+     "PPE और हार्नेस पहनें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "ac.n5.i6",
+   "nos_id": "ac.n5",
+   "qp_id": "qp_ac",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This equipment protects the worker's?",
+    "hi": "यह उपकरण कर्मचारी के किस अंग की रक्षा करता है?"
+   },
+   "options": {
+    "en": [
+     "Hands",
+     "Eyes",
+     "Feet",
+     "Head"
+    ],
+    "hi": [
+     "हाथ",
+     "आँखें",
+     "पैर",
+     "सिर"
+    ]
+   },
+   "answer": 3,
+   "image": "⛑️"
+  },
+  {
+   "id": "elec.n1.i1",
+   "nos_id": "elec.n1",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which wire colour is conventionally used for the neutral?",
+    "hi": "न्यूट्रल के लिए आम तौर पर किस रंग का तार इस्तेमाल होता है?"
+   },
+   "options": {
+    "en": [
+     "Black",
+     "Red",
+     "Green",
+     "Yellow"
+    ],
+    "hi": [
+     "काला",
+     "लाल",
+     "हरा",
+     "पीला"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "elec.n1.i2",
+   "nos_id": "elec.n1",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "The switch must always break which conductor?",
+    "hi": "स्विच हमेशा किस तार को काटता है?"
+   },
+   "options": {
+    "en": [
+     "Any wire",
+     "Live (phase)",
+     "Neutral",
+     "Earth"
+    ],
+    "hi": [
+     "कोई भी",
+     "लाइव (फेज़)",
+     "न्यूट्रल",
+     "अर्थ"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "elec.n1.i3",
+   "nos_id": "elec.n1",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 3,
+   "prompt": {
+    "en": "For a typical 16 A power socket circuit in a home, the usual copper cable size is?",
+    "hi": "घर में 16 A पावर सॉकेट सर्किट के लिए आम तौर पर तांबे की केबल कितनी मोटी होती है?"
+   },
+   "options": {
+    "en": [
+     "10 sq mm",
+     "0.1 sq mm",
+     "2.5 sq mm",
+     "0.5 sq mm"
+    ],
+    "hi": [
+     "10 वर्ग मिमी",
+     "0.1 वर्ग मिमी",
+     "2.5 वर्ग मिमी",
+     "0.5 वर्ग मिमी"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "elec.n1.i4",
+   "nos_id": "elec.n1",
+   "qp_id": "qp_elec",
+   "type": "scenario",
+   "difficulty": 4,
+   "prompt": {
+    "en": "A new room needs one fan, two lights and a 16 A socket for an AC. How do you plan the circuits?",
+    "hi": "नए कमरे में एक पंखा, दो लाइट और एसी के लिए 16 A सॉकेट चाहिए। आप सर्किट कैसे बनाएँगे?"
+   },
+   "options": {
+    "en": [
+     "One thin wire for everything",
+     "Run all from one 5 A socket",
+     "Join to a neighbour's line",
+     "Separate light-fan circuit and a dedicated power circuit for the AC"
+    ],
+    "hi": [
+     "सब कुछ एक पतले तार से",
+     "सब एक 5 A सॉकेट से",
+     "पड़ोसी की लाइन से जोड़ें",
+     "लाइट-पंखे का अलग और एसी के लिए अलग पावर सर्किट"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "elec.n1.i5",
+   "nos_id": "elec.n1",
+   "qp_id": "qp_elec",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the concealed wiring steps.",
+    "hi": "कंसील्ड वायरिंग के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Draw wires through the conduit",
+     "Mark the layout on walls",
+     "Fix switches and test insulation",
+     "Chase walls and fix conduit"
+    ],
+    "hi": [
+     "कंड्यूट में तार डालें",
+     "दीवार पर लेआउट चिह्नित करें",
+     "स्विच लगाएँ और इन्सुलेशन टेस्ट करें",
+     "दीवार काटकर कंड्यूट लगाएँ"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "elec.n1.i6",
+   "nos_id": "elec.n1",
+   "qp_id": "qp_elec",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This tool is typically used to?",
+    "hi": "यह औज़ार आम तौर पर किसलिए है?"
+   },
+   "options": {
+    "en": [
+     "Stitch cloth",
+     "Tighten switch and socket terminals",
+     "Cut pipes",
+     "Measure gas"
+    ],
+    "hi": [
+     "कपड़ा सिलने के लिए",
+     "स्विच-सॉकेट टर्मिनल कसने के लिए",
+     "पाइप काटने के लिए",
+     "गैस मापने के लिए"
+    ]
+   },
+   "answer": 1,
+   "image": "🪛"
+  },
+  {
+   "id": "elec.n2.i1",
+   "nos_id": "elec.n2",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "What does an MCB primarily protect against?",
+    "hi": "MCB मुख्यतः किससे बचाता है?"
+   },
+   "options": {
+    "en": [
+     "Dust",
+     "Voltage rise from sun",
+     "Loose switch cover",
+     "Overload and short circuit"
+    ],
+    "hi": [
+     "धूल",
+     "धूप से वोल्टेज बढ़ना",
+     "स्विच कवर ढीला होना",
+     "ओवरलोड और शॉर्ट सर्किट"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "elec.n2.i2",
+   "nos_id": "elec.n2",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "An RCCB mainly protects against?",
+    "hi": "RCCB मुख्यतः किससे सुरक्षा देता है?"
+   },
+   "options": {
+    "en": [
+     "Earth leakage / electric shock",
+     "Low voltage",
+     "Thread breakage",
+     "Water hammer"
+    ],
+    "hi": [
+     "अर्थ लीकेज / बिजली का झटका",
+     "लो वोल्टेज",
+     "धागा टूटना",
+     "पानी का झटका"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "elec.n2.i3",
+   "nos_id": "elec.n2",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Which instrument checks insulation resistance?",
+    "hi": "इन्सुलेशन रेज़िस्टेंस कौन सा यंत्र जाँचता है?"
+   },
+   "options": {
+    "en": [
+     "Tape measure",
+     "Megger",
+     "Spirit level",
+     "Pipe wrench"
+    ],
+    "hi": [
+     "टेप",
+     "मेगर",
+     "स्पिरिट लेवल",
+     "पाइप रिंच"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "elec.n2.i4",
+   "nos_id": "elec.n2",
+   "qp_id": "qp_elec",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "A customer's metal geyser body gives a mild tingle when touched. What is the likely cause and action?",
+    "hi": "ग्राहक के गीज़र की धातु बॉडी छूने पर हल्का झटका देती है। संभावित कारण और कार्रवाई क्या है?"
+   },
+   "options": {
+    "en": [
+     "Replace the tap",
+     "Paint the geyser",
+     "Poor earthing; isolate, fix earth and fit RCCB",
+     "Normal; ignore"
+    ],
+    "hi": [
+     "नल बदलें",
+     "गीज़र रंग दें",
+     "अर्थिंग खराब; बिजली बंद करें, अर्थ ठीक करें और RCCB लगाएँ",
+     "सामान्य है; अनदेखा करें"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "elec.n2.i5",
+   "nos_id": "elec.n2",
+   "qp_id": "qp_elec",
+   "type": "ordering",
+   "difficulty": 4,
+   "prompt": {
+    "en": "Order the earthing installation steps.",
+    "hi": "अर्थिंग लगाने के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Connect the earth conductor to the electrode",
+     "Dig the earth pit",
+     "Measure earth resistance",
+     "Place the electrode with charcoal and salt layers"
+    ],
+    "hi": [
+     "अर्थ तार को इलेक्ट्रोड से जोड़ें",
+     "अर्थ पिट खोदें",
+     "अर्थ रेज़िस्टेंस मापें",
+     "इलेक्ट्रोड को कोयले और नमक की परत के साथ रखें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "elec.n2.i6",
+   "nos_id": "elec.n2",
+   "qp_id": "qp_elec",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "A tester and other items in this kit are used for?",
+    "hi": "इस किट के टेस्टर आदि किसके लिए हैं?"
+   },
+   "options": {
+    "en": [
+     "Checking and installing electrical work",
+     "Cooking",
+     "Painting",
+     "Sewing"
+    ],
+    "hi": [
+     "बिजली का काम जाँचने और लगाने के लिए",
+     "खाना बनाने के लिए",
+     "पेंट करने के लिए",
+     "सिलाई के लिए"
+    ]
+   },
+   "answer": 0,
+   "image": "🧰"
+  },
+  {
+   "id": "elec.n3.i1",
+   "nos_id": "elec.n3",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "A ceiling fan runs slowly and hums. The most likely cause is?",
+    "hi": "सीलिंग फैन धीरे चलता है और भनभनाता है। सबसे संभावित कारण क्या है?"
+   },
+   "options": {
+    "en": [
+     "Long blades",
+     "New regulator knob",
+     "Weak capacitor or worn bearing",
+     "Wrong wall colour"
+    ],
+    "hi": [
+     "लंबी पंखुड़ियाँ",
+     "नया रेगुलेटर नॉब",
+     "कमज़ोर कैपेसिटर या घिसा बेयरिंग",
+     "दीवार का गलत रंग"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "elec.n3.i2",
+   "nos_id": "elec.n3",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "A breaker trips instantly when switched on. This indicates?",
+    "hi": "ब्रेकर चालू करते ही ट्रिप हो जाता है। यह किसका संकेत है?"
+   },
+   "options": {
+    "en": [
+     "Low humidity",
+     "Too many bulbs off",
+     "Cold weather",
+     "Short circuit or earth fault"
+    ],
+    "hi": [
+     "कम नमी",
+     "बल्ब बंद होना",
+     "ठंड का मौसम",
+     "शॉर्ट सर्किट या अर्थ फॉल्ट"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "elec.n3.i3",
+   "nos_id": "elec.n3",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Before touching any faulty circuit you must?",
+    "hi": "किसी भी खराब सर्किट को छूने से पहले क्या करना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Isolate and verify dead with a tester",
+     "Touch to check",
+     "Wet the wire",
+     "Remove the earth"
+    ],
+    "hi": [
+     "बिजली बंद करके टेस्टर से सुनिश्चित करें",
+     "छूकर देखें",
+     "तार गीला करें",
+     "अर्थ हटाएँ"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "elec.n3.i4",
+   "nos_id": "elec.n3",
+   "qp_id": "qp_elec",
+   "type": "scenario",
+   "difficulty": 4,
+   "prompt": {
+    "en": "Lights in one room are dim and flicker when the iron is switched on in the same circuit. What do you suspect?",
+    "hi": "एक कमरे की लाइट प्रेस चालू करने पर मद्धम होकर टिमटिमाती है। आपको क्या शक होगा?"
+   },
+   "options": {
+    "en": [
+     "Cold wires",
+     "Loose neutral or overloaded circuit",
+     "Bulb colour",
+     "Dust on the switch plate"
+    ],
+    "hi": [
+     "तार ठंडे होना",
+     "ढीला न्यूट्रल या ओवरलोड सर्किट",
+     "बल्ब का रंग",
+     "स्विच प्लेट पर धूल"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "elec.n3.i5",
+   "nos_id": "elec.n3",
+   "qp_id": "qp_elec",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order a basic fault-finding routine.",
+    "hi": "फॉल्ट ढूँढने की बुनियादी प्रक्रिया क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Test continuity and insulation",
+     "Isolate the supply",
+     "Repair and re-test",
+     "Visually inspect wiring and connectors"
+    ],
+    "hi": [
+     "कंटिन्यूटी और इन्सुलेशन जाँचें",
+     "सप्लाई बंद करें",
+     "मरम्मत करके दोबारा जाँचें",
+     "तार और कनेक्टर देखें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "elec.n3.i6",
+   "nos_id": "elec.n3",
+   "qp_id": "qp_elec",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which task suits this tool during repair?",
+    "hi": "मरम्मत में यह औज़ार किस काम का है?"
+   },
+   "options": {
+    "en": [
+     "Cutting tiles",
+     "Pumping tyres",
+     "Sharpening needles",
+     "Opening fan regulator and terminal screws"
+    ],
+    "hi": [
+     "टाइल काटना",
+     "टायर में हवा भरना",
+     "सुई तेज़ करना",
+     "रेगुलेटर और टर्मिनल के पेच खोलना"
+    ]
+   },
+   "answer": 3,
+   "image": "🪛"
+  },
+  {
+   "id": "elec.n4.i1",
+   "nos_id": "elec.n4",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "The first action when someone is stuck to a live wire?",
+    "hi": "कोई लाइव तार से चिपक जाए तो सबसे पहले क्या करें?"
+   },
+   "options": {
+    "en": [
+     "Run away",
+     "Switch off the supply, then separate using dry insulation",
+     "Pull them by hand",
+     "Pour water"
+    ],
+    "hi": [
+     "भाग जाएँ",
+     "सप्लाई बंद करें, फिर सूखे इन्सुलेटर से अलग करें",
+     "हाथ से खींचें",
+     "पानी डालें"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "elec.n4.i2",
+   "nos_id": "elec.n4",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which footwear is best while working on live boards?",
+    "hi": "लाइव बोर्ड पर काम करते समय कौन सा जूता बेहतर है?"
+   },
+   "options": {
+    "en": [
+     "Bare feet",
+     "Metal-toe slippers",
+     "Insulated safety shoes",
+     "Wet sandals"
+    ],
+    "hi": [
+     "नंगे पैर",
+     "धातु वाली चप्पल",
+     "इन्सुलेटेड सेफ्टी जूते",
+     "गीली चप्पल"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "elec.n4.i3",
+   "nos_id": "elec.n4",
+   "qp_id": "qp_elec",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "An estimate to the customer should be?",
+    "hi": "ग्राहक को अनुमान कैसा देना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Hidden",
+     "Verbal only after the work",
+     "Changed secretly",
+     "Clear, itemised and agreed before work"
+    ],
+    "hi": [
+     "छुपा हुआ",
+     "काम के बाद सिर्फ ज़बानी",
+     "चुपचाप बदला हुआ",
+     "स्पष्ट, मदवार और काम से पहले तय"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "elec.n4.i4",
+   "nos_id": "elec.n4",
+   "qp_id": "qp_elec",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "You find a damaged old wire you were not asked to check. What do you do?",
+    "hi": "आपको एक पुराना क्षतिग्रस्त तार दिखता है जिसे जाँचने को नहीं कहा गया। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Report it to the customer and recommend replacement",
+     "Ignore",
+     "Tape and hide it",
+     "Remove it without telling"
+    ],
+    "hi": [
+     "ग्राहक को बताएँ और बदलने की सलाह दें",
+     "अनदेखा करें",
+     "टेप लगाकर छुपाएँ",
+     "बिना बताए निकालें"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "elec.n4.i5",
+   "nos_id": "elec.n4",
+   "qp_id": "qp_elec",
+   "type": "ordering",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Order the lock-out routine.",
+    "hi": "लॉक-आउट प्रक्रिया क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Test dead with a tester",
+     "Switch off the main",
+     "Begin work",
+     "Lock or tag the isolator"
+    ],
+    "hi": [
+     "टेस्टर से डेड सुनिश्चित करें",
+     "मेन बंद करें",
+     "काम शुरू करें",
+     "आइसोलेटर पर लॉक या टैग लगाएँ"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "elec.n4.i6",
+   "nos_id": "elec.n4",
+   "qp_id": "qp_elec",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "These are worn to protect?",
+    "hi": "इन्हें किसकी सुरक्षा के लिए पहना जाता है?"
+   },
+   "options": {
+    "en": [
+     "Eyes",
+     "Knees",
+     "Hands",
+     "Ears"
+    ],
+    "hi": [
+     "आँखें",
+     "घुटने",
+     "हाथ",
+     "कान"
+    ]
+   },
+   "answer": 2,
+   "image": "🧤"
+  },
+  {
+   "id": "sew.n1.i1",
+   "nos_id": "sew.n1",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Skipped stitches are most often caused by?",
+    "hi": "टाँके छूटने का सबसे आम कारण क्या है?"
+   },
+   "options": {
+    "en": [
+     "Too much light",
+     "Cold room",
+     "Long table",
+     "Blunt or wrong needle"
+    ],
+    "hi": [
+     "ज़्यादा रोशनी",
+     "ठंडा कमरा",
+     "लंबी मेज़",
+     "भोथरी या गलत सुई"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "sew.n1.i2",
+   "nos_id": "sew.n1",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Loops on the underside of the fabric usually mean?",
+    "hi": "कपड़े के नीचे की ओर फंदे बनना आम तौर पर क्या दर्शाता है?"
+   },
+   "options": {
+    "en": [
+     "Upper thread tension too loose",
+     "Bobbin too full of oil",
+     "Needle too short",
+     "Fabric too clean"
+    ],
+    "hi": [
+     "ऊपरी धागे का तनाव ढीला",
+     "बॉबिन में तेल ज़्यादा",
+     "सुई बहुत छोटी",
+     "कपड़ा बहुत साफ़"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "sew.n1.i3",
+   "nos_id": "sew.n1",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "A thicker denim fabric needs?",
+    "hi": "मोटे डेनिम कपड़े के लिए क्या चाहिए?"
+   },
+   "options": {
+    "en": [
+     "A larger bobbin",
+     "A heavier needle size",
+     "A very fine needle",
+     "No needle"
+    ],
+    "hi": [
+     "बड़ी बॉबिन",
+     "मोटी सुई का नंबर",
+     "बहुत बारीक सुई",
+     "बिना सुई"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "sew.n1.i4",
+   "nos_id": "sew.n1",
+   "qp_id": "qp_sew",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "The machine suddenly makes a loud knocking noise while stitching. What do you do?",
+    "hi": "सिलाई करते समय मशीन अचानक ज़ोर से खटखट करने लगती है। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Press the pedal harder",
+     "Cover the sound",
+     "Stop, switch off, check needle and hook area and report",
+     "Keep stitching faster"
+    ],
+    "hi": [
+     "पैडल और दबाएँ",
+     "आवाज़ छुपाएँ",
+     "रुकें, बंद करें, सुई और हुक देखें और बताएँ",
+     "तेज़ सिलते रहें"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "sew.n1.i5",
+   "nos_id": "sew.n1",
+   "qp_id": "qp_sew",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the threading and start-up steps.",
+    "hi": "धागा डालने और शुरू करने के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Insert the bobbin and pull up its thread",
+     "Raise the presser foot",
+     "Test-stitch on scrap fabric",
+     "Thread through the guides and take-up lever"
+    ],
+    "hi": [
+     "बॉबिन डालें और उसका धागा ऊपर खींचें",
+     "प्रेसर फुट ऊपर करें",
+     "कतरन पर टेस्ट सिलाई करें",
+     "गाइड और टेक-अप लीवर से धागा निकालें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "sew.n1.i6",
+   "nos_id": "sew.n1",
+   "qp_id": "qp_sew",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This item is used as?",
+    "hi": "यह वस्तु किस रूप में इस्तेमाल होती है?"
+   },
+   "options": {
+    "en": [
+     "Stitching thread",
+     "Cutting tool",
+     "Measuring tape",
+     "Needle oil"
+    ],
+    "hi": [
+     "सिलाई का धागा",
+     "काटने का औज़ार",
+     "नापने का फीता",
+     "सुई का तेल"
+    ]
+   },
+   "answer": 0,
+   "image": "🧵"
+  },
+  {
+   "id": "sew.n2.i1",
+   "nos_id": "sew.n2",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "The seam allowance in a garment is?",
+    "hi": "परिधान में सीम अलाउंस क्या है?"
+   },
+   "options": {
+    "en": [
+     "The needle size",
+     "The button count",
+     "Extra fabric beyond the stitching line",
+     "The thread cost"
+    ],
+    "hi": [
+     "सुई का नंबर",
+     "बटन की संख्या",
+     "सिलाई रेखा के बाहर अतिरिक्त कपड़ा",
+     "धागे की कीमत"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "sew.n2.i2",
+   "nos_id": "sew.n2",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Puckering at a seam is usually due to?",
+    "hi": "सीम पर सिकुड़न आम तौर पर किस कारण से होती है?"
+   },
+   "options": {
+    "en": [
+     "Too much cloth",
+     "Blue thread",
+     "Long sleeves",
+     "Too tight thread tension or wrong needle"
+    ],
+    "hi": [
+     "कपड़ा ज़्यादा",
+     "नीला धागा",
+     "लंबी आस्तीन",
+     "धागे का ज़्यादा तनाव या गलत सुई"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "sew.n2.i3",
+   "nos_id": "sew.n2",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 3,
+   "prompt": {
+    "en": "A flat-felled seam is typically used on?",
+    "hi": "फ्लैट-फेल्ड सीम आम तौर पर कहाँ इस्तेमाल होती है?"
+   },
+   "options": {
+    "en": [
+     "Jeans and shirts",
+     "Paper bags",
+     "Hair bands",
+     "Rope"
+    ],
+    "hi": [
+     "जींस और शर्ट",
+     "कागज़ के थैले",
+     "हेयर बैंड",
+     "रस्सी"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "sew.n2.i4",
+   "nos_id": "sew.n2",
+   "qp_id": "qp_sew",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "A bundle of 50 shirt collars shows uneven points after stitching. What do you do?",
+    "hi": "50 शर्ट कॉलर के बंडल में सिलाई के बाद कोने असमान हैं। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Hide defects",
+     "Stop, check cutting and stitching guide and correct before continuing",
+     "Continue and hope",
+     "Throw all away"
+    ],
+    "hi": [
+     "कमी छुपाएँ",
+     "रुकें, कटिंग और गाइड जाँचें और सुधार कर आगे बढ़ें",
+     "चलने दें",
+     "सब फेंक दें"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "sew.n2.i5",
+   "nos_id": "sew.n2",
+   "qp_id": "qp_sew",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the steps to make a basic shirt sleeve.",
+    "hi": "बुनियादी शर्ट की आस्तीन बनाने के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Attach the cuff or hem",
+     "Cut the sleeve pieces",
+     "Set the sleeve into the armhole",
+     "Stitch the sleeve seam"
+    ],
+    "hi": [
+     "कफ़ या हेम लगाएँ",
+     "आस्तीन के टुकड़े काटें",
+     "आस्तीन को आर्महोल में जोड़ें",
+     "आस्तीन की सीम सिलें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "sew.n2.i6",
+   "nos_id": "sew.n2",
+   "qp_id": "qp_sew",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "These are mainly used for?",
+    "hi": "ये मुख्यतः किसके लिए हैं?"
+   },
+   "options": {
+    "en": [
+     "Drilling walls",
+     "Measuring gas",
+     "Tightening nuts",
+     "Cutting fabric"
+    ],
+    "hi": [
+     "दीवार में छेद",
+     "गैस मापना",
+     "नट कसना",
+     "कपड़ा काटना"
+    ]
+   },
+   "answer": 3,
+   "image": "✂️"
+  },
+  {
+   "id": "sew.n3.i1",
+   "nos_id": "sew.n3",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which is a major sewing defect?",
+    "hi": "इनमें से कौन सा प्रमुख सिलाई दोष है?"
+   },
+   "options": {
+    "en": [
+     "Clean press",
+     "Open seam",
+     "Neat hem",
+     "Even stitching"
+    ],
+    "hi": [
+     "साफ़ प्रेस",
+     "खुली सीम",
+     "सुघड़ हेम",
+     "एकसार सिलाई"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "sew.n3.i2",
+   "nos_id": "sew.n3",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Pressing synthetic fabric needs?",
+    "hi": "सिंथेटिक कपड़े की प्रेस के लिए क्या चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Water poured on it",
+     "No iron",
+     "Low temperature with a press cloth",
+     "Very hot iron directly"
+    ],
+    "hi": [
+     "पानी डालना",
+     "प्रेस नहीं",
+     "कम तापमान और प्रेस कपड़ा",
+     "बहुत गरम प्रेस सीधे"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "sew.n3.i3",
+   "nos_id": "sew.n3",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Garment measurements are checked against?",
+    "hi": "परिधान की माप किससे मिलाई जाती है?"
+   },
+   "options": {
+    "en": [
+     "A guess",
+     "Another worker's choice",
+     "Colour",
+     "The size chart or spec sheet"
+    ],
+    "hi": [
+     "अंदाज़ा",
+     "दूसरे कारीगर की पसंद",
+     "रंग",
+     "साइज़ चार्ट या स्पेक शीट"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "sew.n3.i4",
+   "nos_id": "sew.n3",
+   "qp_id": "qp_sew",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "You find a stain on a finished garment at packing. What do you do?",
+    "hi": "पैकिंग में तैयार कपड़े पर दाग दिखता है। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Separate it and report it to the supervisor",
+     "Pack it anyway",
+     "Hide it with a tag",
+     "Throw it in the bin"
+    ],
+    "hi": [
+     "अलग करें और सुपरवाइज़र को बताएँ",
+     "फिर भी पैक करें",
+     "टैग से छुपाएँ",
+     "कूड़े में डालें"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "sew.n3.i5",
+   "nos_id": "sew.n3",
+   "qp_id": "qp_sew",
+   "type": "ordering",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Order finishing steps.",
+    "hi": "फिनिशिंग के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Press",
+     "Trim threads",
+     "Fold, tag and pack",
+     "Inspect for defects"
+    ],
+    "hi": [
+     "प्रेस करें",
+     "धागे काटें",
+     "मोड़ें, टैग लगाएँ और पैक करें",
+     "दोष जाँचें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "sew.n3.i6",
+   "nos_id": "sew.n3",
+   "qp_id": "qp_sew",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "In finishing this must be trimmed from the garment?",
+    "hi": "फिनिशिंग में कपड़े से यह क्या काटना होता है?"
+   },
+   "options": {
+    "en": [
+     "Seams",
+     "Labels",
+     "Loose threads",
+     "Buttons"
+    ],
+    "hi": [
+     "सीम",
+     "लेबल",
+     "ढीले धागे",
+     "बटन"
+    ]
+   },
+   "answer": 2,
+   "image": "🧵"
+  },
+  {
+   "id": "sew.n4.i1",
+   "nos_id": "sew.n4",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "The needle guard is used to?",
+    "hi": "नीडल गार्ड किसलिए होता है?"
+   },
+   "options": {
+    "en": [
+     "Protect fingers from the needle",
+     "Hold the thread",
+     "Cool the motor",
+     "Cut cloth"
+    ],
+    "hi": [
+     "उंगलियों को सुई से बचाने के लिए",
+     "धागा पकड़ने के लिए",
+     "मोटर ठंडा करने के लिए",
+     "कपड़ा काटने के लिए"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "sew.n4.i2",
+   "nos_id": "sew.n4",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Good seating posture while sewing is?",
+    "hi": "सिलाई करते समय बैठने की अच्छी मुद्रा क्या है?"
+   },
+   "options": {
+    "en": [
+     "Lying down",
+     "Back supported, feet flat, work at elbow height",
+     "Bent forward all day",
+     "Standing on one leg"
+    ],
+    "hi": [
+     "लेटकर",
+     "पीठ को सहारा, पैर सपाट, कोहनी की ऊँचाई पर काम",
+     "पूरे दिन झुककर",
+     "एक पैर पर खड़े"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "sew.n4.i3",
+   "nos_id": "sew.n4",
+   "qp_id": "qp_sew",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Why log machine breakdowns?",
+    "hi": "मशीन की खराबी क्यों दर्ज करनी चाहिए?"
+   },
+   "options": {
+    "en": [
+     "For no reason",
+     "To increase noise",
+     "So repairs are planned and targets adjusted",
+     "To hide them"
+    ],
+    "hi": [
+     "बिना कारण",
+     "शोर बढ़ाने के लिए",
+     "ताकि मरम्मत की योजना बने और लक्ष्य सुधरे",
+     "छुपाने के लिए"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "sew.n4.i4",
+   "nos_id": "sew.n4",
+   "qp_id": "qp_sew",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "You are behind on the target but the machine guard is loose. What do you do?",
+    "hi": "आप लक्ष्य से पीछे हैं और मशीन का गार्ड ढीला है। क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Remove the guard to go faster",
+     "Ignore it",
+     "Tape it",
+     "Fix or report the guard before continuing"
+    ],
+    "hi": [
+     "तेज़ी के लिए गार्ड हटाएँ",
+     "अनदेखा करें",
+     "टेप लगाएँ",
+     "गार्ड ठीक करें या बताएँ, फिर काम करें"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "sew.n4.i5",
+   "nos_id": "sew.n4",
+   "qp_id": "qp_sew",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order a safe start-of-shift routine.",
+    "hi": "शिफ्ट शुरू करने की सुरक्षित प्रक्रिया क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Test-stitch",
+     "Check the guard and light",
+     "Begin production",
+     "Clean and oil lightly"
+    ],
+    "hi": [
+     "टेस्ट सिलाई",
+     "गार्ड और रोशनी जाँचें",
+     "उत्पादन शुरू करें",
+     "हल्की सफाई और तेल"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "sew.n4.i6",
+   "nos_id": "sew.n4",
+   "qp_id": "qp_sew",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This equipment is used in case of?",
+    "hi": "यह उपकरण किस स्थिति में काम आता है?"
+   },
+   "options": {
+    "en": [
+     "Cold",
+     "Fire",
+     "Flood",
+     "Wind"
+    ],
+    "hi": [
+     "ठंड",
+     "आग",
+     "बाढ़",
+     "हवा"
+    ]
+   },
+   "answer": 1,
+   "image": "🧯"
+  },
+  {
+   "id": "plumb.n1.i1",
+   "nos_id": "plumb.n1",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which tape is used on threaded GI joints to seal?",
+    "hi": "थ्रेडेड GI जोड़ों को सील करने के लिए कौन सा टेप इस्तेमाल होता है?"
+   },
+   "options": {
+    "en": [
+     "Duct tape",
+     "PTFE (teflon) tape",
+     "Electrical tape",
+     "Paper tape"
+    ],
+    "hi": [
+     "डक्ट टेप",
+     "PTFE (टेफ़लॉन) टेप",
+     "इलेक्ट्रिकल टेप",
+     "कागज़ का टेप"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "plumb.n1.i2",
+   "nos_id": "plumb.n1",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "CPVC pipes are preferred for?",
+    "hi": "CPVC पाइप किसके लिए पसंद किए जाते हैं?"
+   },
+   "options": {
+    "en": [
+     "Electric wiring",
+     "Gas cylinders",
+     "Hot and cold water lines",
+     "Only sewage"
+    ],
+    "hi": [
+     "बिजली की वायरिंग",
+     "गैस सिलेंडर",
+     "गरम और ठंडे पानी की लाइन",
+     "सिर्फ सीवर"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "plumb.n1.i3",
+   "nos_id": "plumb.n1",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Before closing walls over a new supply line you should?",
+    "hi": "नई सप्लाई लाइन पर दीवार बंद करने से पहले क्या करना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Paint the wall",
+     "Add more bends",
+     "Remove the valve",
+     "Pressure-test it"
+    ],
+    "hi": [
+     "दीवार पेंट करें",
+     "और मोड़ जोड़ें",
+     "वाल्व निकाल दें",
+     "उसका प्रेशर टेस्ट करें"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "plumb.n1.i4",
+   "nos_id": "plumb.n1",
+   "qp_id": "qp_plumb",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "After fitting a new tap, a slow drip appears at the threaded joint. What do you do?",
+    "hi": "नया नल लगाने के बाद थ्रेडेड जोड़ से धीरे-धीरे पानी टपकता है। आप क्या करेंगे?"
+   },
+   "options": {
+    "en": [
+     "Close supply, remove, re-wrap PTFE tape and refit",
+     "Wrap a cloth around it",
+     "Overtighten with a long pipe",
+     "Ignore it"
+    ],
+    "hi": [
+     "सप्लाई बंद करें, खोलें, PTFE टेप दोबारा लपेटकर कसें",
+     "कपड़ा लपेटें",
+     "लंबे पाइप से ज़्यादा कसें",
+     "अनदेखा करें"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "plumb.n1.i5",
+   "nos_id": "plumb.n1",
+   "qp_id": "qp_plumb",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the steps to install a PVC water line.",
+    "hi": "PVC पानी लाइन लगाने के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Apply solvent cement and join",
+     "Mark the route",
+     "Pressure-test the line",
+     "Cut and clean the pipe ends"
+    ],
+    "hi": [
+     "सॉल्वेंट सीमेंट लगाकर जोड़ें",
+     "रास्ता चिह्नित करें",
+     "लाइन का प्रेशर टेस्ट करें",
+     "पाइप के सिरे काटें और साफ़ करें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "plumb.n1.i6",
+   "nos_id": "plumb.n1",
+   "qp_id": "qp_plumb",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This fixture is a?",
+    "hi": "यह फिक्सचर क्या है?"
+   },
+   "options": {
+    "en": [
+     "Fan",
+     "Lamp",
+     "Water tap",
+     "Switch"
+    ],
+    "hi": [
+     "पंखा",
+     "लैंप",
+     "पानी का नल",
+     "स्विच"
+    ]
+   },
+   "answer": 2,
+   "image": "🚰"
+  },
+  {
+   "id": "plumb.n2.i1",
+   "nos_id": "plumb.n2",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "What is the purpose of a water-seal trap?",
+    "hi": "वाटर-सील ट्रैप का उद्देश्य क्या है?"
+   },
+   "options": {
+    "en": [
+     "Block sewer gas from entering the room",
+     "Increase water pressure",
+     "Heat the water",
+     "Store water"
+    ],
+    "hi": [
+     "सीवर गैस को कमरे में आने से रोकना",
+     "पानी का दबाव बढ़ाना",
+     "पानी गरम करना",
+     "पानी जमा करना"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "plumb.n2.i2",
+   "nos_id": "plumb.n2",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Waste pipes must be laid with?",
+    "hi": "वेस्ट पाइप किस तरह बिछाई जानी चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Random slope",
+     "A continuous downward gradient",
+     "A upward slope",
+     "No slope"
+    ],
+    "hi": [
+     "जैसी भी ढलान",
+     "लगातार नीचे की ओर ढलान",
+     "ऊपर की ओर ढलान",
+     "बिना ढलान"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "plumb.n2.i3",
+   "nos_id": "plumb.n2",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 3,
+   "prompt": {
+    "en": "A vent pipe in a drainage system mainly?",
+    "hi": "ड्रेनेज सिस्टम में वेंट पाइप मुख्यतः क्या करता है?"
+   },
+   "options": {
+    "en": [
+     "Stores waste",
+     "Increases pressure",
+     "Allows air to prevent siphoning of traps",
+     "Supplies hot water"
+    ],
+    "hi": [
+     "कचरा जमा करता है",
+     "दबाव बढ़ाता है",
+     "हवा देकर ट्रैप का पानी खिंचने से रोकता है",
+     "गरम पानी देता है"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "plumb.n2.i4",
+   "nos_id": "plumb.n2",
+   "qp_id": "qp_plumb",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "A newly fitted wash basin drains very slowly. What do you check first?",
+    "hi": "नया लगाया वॉश बेसिन बहुत धीरे खाली होता है। पहले क्या जाँचेंगे?"
+   },
+   "options": {
+    "en": [
+     "Basin colour",
+     "Tap handle",
+     "Wall paint",
+     "Waste pipe gradient, trap and blockage"
+    ],
+    "hi": [
+     "बेसिन का रंग",
+     "नल का हैंडल",
+     "दीवार का पेंट",
+     "वेस्ट पाइप की ढलान, ट्रैप और ब्लॉकेज"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "plumb.n2.i5",
+   "nos_id": "plumb.n2",
+   "qp_id": "qp_plumb",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the steps to install a wash basin.",
+    "hi": "वॉश बेसिन लगाने के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Connect tap and waste with trap",
+     "Mark height and level",
+     "Test for leaks",
+     "Fix brackets or pedestal"
+    ],
+    "hi": [
+     "नल और ट्रैप के साथ वेस्ट जोड़ें",
+     "ऊँचाई और लेवल चिह्नित करें",
+     "लीक जाँचें",
+     "ब्रैकेट या पेडेस्टल लगाएँ"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "plumb.n2.i6",
+   "nos_id": "plumb.n2",
+   "qp_id": "qp_plumb",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This tool is mainly used to?",
+    "hi": "यह औज़ार मुख्यतः किसलिए है?"
+   },
+   "options": {
+    "en": [
+     "Drill walls",
+     "Clear blocked drains",
+     "Cut pipes",
+     "Weld metal"
+    ],
+    "hi": [
+     "दीवार में छेद",
+     "बंद नाली खोलना",
+     "पाइप काटना",
+     "धातु जोड़ना"
+    ]
+   },
+   "answer": 1,
+   "image": "🪠"
+  },
+  {
+   "id": "plumb.n3.i1",
+   "nos_id": "plumb.n3",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "A dripping tap most often needs a new?",
+    "hi": "टपकते नल में आम तौर पर क्या बदलना होता है?"
+   },
+   "options": {
+    "en": [
+     "Wall tile",
+     "Electric wire",
+     "Basin",
+     "Washer or cartridge"
+    ],
+    "hi": [
+     "दीवार की टाइल",
+     "बिजली का तार",
+     "बेसिन",
+     "वॉशर या कार्ट्रिज"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "plumb.n3.i2",
+   "nos_id": "plumb.n3",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Which is the first step to repair a burst pipe?",
+    "hi": "फटी पाइप की मरम्मत का पहला कदम क्या है?"
+   },
+   "options": {
+    "en": [
+     "Close the supply valve",
+     "Pour cement",
+     "Open all taps",
+     "Weld at once"
+    ],
+    "hi": [
+     "सप्लाई वाल्व बंद करें",
+     "सीमेंट डालें",
+     "सारे नल खोलें",
+     "तुरंत वेल्ड करें"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "plumb.n3.i3",
+   "nos_id": "plumb.n3",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Using strong acid on a PVC drain blockage is?",
+    "hi": "PVC नाली के ब्लॉकेज में तेज़ तेज़ाब डालना कैसा है?"
+   },
+   "options": {
+    "en": [
+     "Harmless",
+     "Unsafe; it can damage pipes and hurt you",
+     "The best method",
+     "Required by law"
+    ],
+    "hi": [
+     "हानिरहित",
+     "असुरक्षित; पाइप और आपको नुकसान हो सकता है",
+     "सबसे अच्छा तरीका",
+     "कानूनन ज़रूरी"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "plumb.n3.i4",
+   "nos_id": "plumb.n3",
+   "qp_id": "qp_plumb",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "A ceiling stain appears below a bathroom. What is your approach?",
+    "hi": "बाथरूम के नीचे छत पर दाग दिखता है। आपका तरीका क्या होगा?"
+   },
+   "options": {
+    "en": [
+     "Break the whole ceiling",
+     "Ignore it",
+     "Isolate water, trace the leak from above and test lines",
+     "Paint over it"
+    ],
+    "hi": [
+     "पूरी छत तोड़ दें",
+     "अनदेखा करें",
+     "पानी बंद करें, ऊपर से रिसाव खोजें और लाइन जाँचें",
+     "ऊपर से रंग दें"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "plumb.n3.i5",
+   "nos_id": "plumb.n3",
+   "qp_id": "qp_plumb",
+   "type": "ordering",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Order a leak repair routine.",
+    "hi": "रिसाव मरम्मत प्रक्रिया क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Repair or replace the part",
+     "Close the supply",
+     "Open supply and test",
+     "Locate the leak"
+    ],
+    "hi": [
+     "हिस्सा सुधारें या बदलें",
+     "सप्लाई बंद करें",
+     "सप्लाई खोलकर जाँचें",
+     "रिसाव खोजें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "plumb.n3.i6",
+   "nos_id": "plumb.n3",
+   "qp_id": "qp_plumb",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This tool is used to?",
+    "hi": "यह औज़ार किसलिए है?"
+   },
+   "options": {
+    "en": [
+     "Grip and turn pipes and fittings",
+     "Stitch cloth",
+     "Measure volts",
+     "Sand wood"
+    ],
+    "hi": [
+     "पाइप और फिटिंग पकड़कर घुमाना",
+     "कपड़ा सिलना",
+     "वोल्ट मापना",
+     "लकड़ी घिसना"
+    ]
+   },
+   "answer": 0,
+   "image": "🔧"
+  },
+  {
+   "id": "plumb.n4.i1",
+   "nos_id": "plumb.n4",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 2,
+   "prompt": {
+    "en": "Before entering a manhole or deep trench you must?",
+    "hi": "मैनहोल या गहरी खाई में उतरने से पहले क्या ज़रूरी है?"
+   },
+   "options": {
+    "en": [
+     "Smoke to check air",
+     "Close your eyes",
+     "Check air safety and have a standby person",
+     "Go alone quickly"
+    ],
+    "hi": [
+     "सिगरेट से हवा जाँचें",
+     "आँखें बंद करें",
+     "हवा की सुरक्षा जाँचें और एक सहायक रखें",
+     "अकेले जल्दी उतरें"
+    ]
+   },
+   "answer": 2
+  },
+  {
+   "id": "plumb.n4.i2",
+   "nos_id": "plumb.n4",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "After finishing work you should?",
+    "hi": "काम खत्म करने के बाद क्या करना चाहिए?"
+   },
+   "options": {
+    "en": [
+     "Leave debris",
+     "Hide tools",
+     "Leave quietly",
+     "Clean the area and remove waste"
+    ],
+    "hi": [
+     "मलबा छोड़ दें",
+     "औज़ार छुपाएँ",
+     "चुपचाप चले जाएँ",
+     "जगह साफ़ करें और कचरा हटाएँ"
+    ]
+   },
+   "answer": 3
+  },
+  {
+   "id": "plumb.n4.i3",
+   "nos_id": "plumb.n4",
+   "qp_id": "qp_plumb",
+   "type": "mcq",
+   "difficulty": 1,
+   "prompt": {
+    "en": "Gloves while handling waste pipes protect against?",
+    "hi": "वेस्ट पाइप संभालते समय दस्ताने किससे बचाते हैं?"
+   },
+   "options": {
+    "en": [
+     "Contamination and cuts",
+     "Rain",
+     "Cold",
+     "Noise"
+    ],
+    "hi": [
+     "संक्रमण और कट",
+     "बारिश",
+     "ठंड",
+     "शोर"
+    ]
+   },
+   "answer": 0
+  },
+  {
+   "id": "plumb.n4.i4",
+   "nos_id": "plumb.n4",
+   "qp_id": "qp_plumb",
+   "type": "scenario",
+   "difficulty": 3,
+   "prompt": {
+    "en": "The customer disputes the quoted cost after work. What is best?",
+    "hi": "काम के बाद ग्राहक कीमत पर विवाद करता है। सबसे अच्छा क्या है?"
+   },
+   "options": {
+    "en": [
+     "Leave without answer",
+     "Show the itemised estimate agreed earlier and discuss politely",
+     "Argue loudly",
+     "Remove the fitted tap"
+    ],
+    "hi": [
+     "बिना जवाब चले जाएँ",
+     "पहले तय मदवार अनुमान दिखाकर विनम्रता से बात करें",
+     "ज़ोर से बहस करें",
+     "लगा हुआ नल निकाल लें"
+    ]
+   },
+   "answer": 1
+  },
+  {
+   "id": "plumb.n4.i5",
+   "nos_id": "plumb.n4",
+   "qp_id": "qp_plumb",
+   "type": "ordering",
+   "difficulty": 3,
+   "prompt": {
+    "en": "Order the job close-out steps.",
+    "hi": "काम पूरा करने के चरण क्रम में लगाइए।"
+   },
+   "options": {
+    "en": [
+     "Explain the work to the customer",
+     "Test the work",
+     "Collect payment and receipt",
+     "Clean the area"
+    ],
+    "hi": [
+     "ग्राहक को काम समझाएँ",
+     "काम जाँचें",
+     "भुगतान और रसीद लें",
+     "जगह साफ़ करें"
+    ]
+   },
+   "answer": [
+    1,
+    3,
+    0,
+    2
+   ]
+  },
+  {
+   "id": "plumb.n4.i6",
+   "nos_id": "plumb.n4",
+   "qp_id": "qp_plumb",
+   "type": "image-id",
+   "difficulty": 1,
+   "prompt": {
+    "en": "This is worn to protect the?",
+    "hi": "यह किसकी सुरक्षा के लिए पहना जाता है?"
+   },
+   "options": {
+    "en": [
+     "Hands",
+     "Eyes",
+     "Ears",
+     "Head"
+    ],
+    "hi": [
+     "हाथ",
+     "आँखें",
+     "कान",
+     "सिर"
+    ]
+   },
+   "answer": 3,
+   "image": "⛑️"
+  }
+ ]
+}

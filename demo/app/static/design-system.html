@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eklavya Design System</title>
+<link rel="stylesheet" href="css/eklavya.css">
+<style>
+  .ds-top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .ds-top .in{max-width:1180px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:16px}
+  .ds-nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1}
+  .ds-nav a{padding:6px 10px;border-radius:8px;font-size:13px;font-weight:600;color:var(--ink-3);white-space:nowrap;text-decoration:none}
+  .ds-nav a:hover{background:var(--surface-3);color:var(--ink)}
+  .ds-wrap{max-width:1180px;margin:0 auto;padding:0 24px 80px}
+  .ds-hero{padding:56px 0 40px}
+  .ds-sec{padding-top:56px}
+  .ds-sec>h2{font-size:22px;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+  .ds-sec>p.sub{color:var(--ink-3);margin-bottom:20px}
+  .spec{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px;margin-bottom:16px}
+  .spec>.eyebrow{margin-bottom:14px}
+  .sw{border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--surface)}
+  .sw i{display:block;height:64px}
+  .sw div{padding:8px 10px;font-size:12px}.sw b{display:block;font-size:12.5px}.sw span{color:var(--ink-3);font-family:var(--mono);font-size:11px}
+  .dark-panel{border-radius:var(--r-xl);padding:24px;border:1px solid var(--border);margin-top:16px}
+  .phone-demo .phone{height:740px;margin:0 auto}
+  .phone-demo .phone,.shell-demo{position:relative}
+  .shell-demo{border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;height:460px}
+  .shell-demo .app-shell{min-height:0;height:100%}
+  .shell-demo .sidebar{position:static;height:100%}
+  .shell-demo .main{overflow:auto}
+  .shell-demo .topbar{position:static;padding:0 20px}
+  .shell-demo .page{padding:20px}
+  .shell-demo .menu-toggle{display:none}
+  @media (max-width:900px){.shell-demo .app-shell{grid-template-columns:200px minmax(0,1fr)}.shell-demo .sidebar{transform:none;position:static;width:auto}}
+  @media (max-width:520px){.phone-demo .phone{width:100%;height:740px;padding:9px;border-radius:44px;background:#0c1417;box-shadow:0 0 0 2px #26363b,var(--shadow-lg)}.phone-demo .phone::before{display:block}.phone-demo .phone-screen{border-radius:35px}.phone-demo .statusbar,.phone-demo .home-bar{display:flex}.phone-demo .home-bar{display:grid}.phone-demo .phone-body{padding-top:8px}}
+  @media (max-width:560px){.shell-demo .app-shell{grid-template-columns:64px minmax(0,1fr)}.shell-demo .sidebar{padding:16px 8px}.shell-demo .nav-link span,.shell-demo .brand span,.shell-demo .nav-section,.shell-demo .sidebar-foot>div,.shell-demo .nav-link .badge{display:none}.shell-demo .nav-link{justify-content:center;padding:0}.shell-demo .sidebar .brand{padding:4px 0 16px;justify-content:center}.ds-wrap{padding:0 16px 60px}.ds-top .in{padding:10px 16px}.spec{padding:16px}}
+</style>
+</head>
+<body class="hero-gradient" style="background-repeat:no-repeat;background-size:100% 520px;background-color:var(--bg)">
+<header class="ds-top"><div class="in">
+  <div class="row" style="gap:10px;flex:none"><span class="brand-mark"><i data-icon="target"></i></span><b style="letter-spacing:-.02em">Eklavya</b></div>
+  <nav class="ds-nav" aria-label="Sections">
+    <a href="#color">Color</a><a href="#type">Type</a><a href="#actions">Buttons</a><a href="#forms">Forms</a><a href="#status">Chips</a><a href="#ai">AI vs Human</a><a href="#feedback">Feedback</a><a href="#data">Data</a><a href="#nav">Navigation</a><a href="#flow">Flow</a><a href="#evidence">Evidence</a><a href="#shell">Shells</a><a href="#dark">Dark</a>
+  </nav>
+  <div class="seg" id="themeSeg" role="group" aria-label="Theme"><button data-t="auto" aria-pressed="true">Auto</button><button data-t="light">Light</button><button data-t="dark">Dark</button></div>
+</div></header>
+
+<main class="ds-wrap">
+<section class="ds-hero">
+  <div class="eyebrow">Design system · v1</div>
+  <h1 class="display mt-2" style="max-width:14ch">Clean, calm, credible.</h1>
+  <p class="lead mt-4" style="max-width:56ch">Deep teal and ink for trust, saffron for the moments that matter, on warm paper-like surfaces. Every component below is live CSS from <code>eklavya.css</code>. Toggle the theme at top right.</p>
+  <div class="row wrap mt-6"><span class="chip chip-primary"><i data-icon="sparkles"></i>AI suggests</span><span class="chip chip-accent"><i data-icon="pen-line"></i>Humans decide</span><span class="chip chip-ok"><i data-icon="shield-check"></i>Verifiable</span></div>
+</section>
+
+<div id="light-body">
+<section class="ds-sec" id="color"><h2>Color</h2><p class="sub">Semantic tokens only — never hard-code hex in pages.</p>
+  <div class="spec"><div class="eyebrow">Brand</div><div class="grid grid-auto" style="grid-template-columns:repeat(auto-fill,minmax(130px,1fr))">
+    <div class="sw"><i style="background:var(--teal-950)"></i><div><b>teal-950</b><span>sidebar</span></div></div>
+    <div class="sw"><i style="background:var(--teal-800)"></i><div><b>teal-800</b><span>--primary</span></div></div>
+    <div class="sw"><i style="background:var(--teal-500)"></i><div><b>teal-500</b><span>--teal-500</span></div></div>
+    <div class="sw"><i style="background:var(--teal-100)"></i><div><b>teal-100</b><span>--primary-soft-2</span></div></div>
+    <div class="sw"><i style="background:var(--saffron-500)"></i><div><b>saffron-500</b><span>--accent</span></div></div>
+    <div class="sw"><i style="background:var(--saffron-100)"></i><div><b>saffron-100</b><span>--accent-soft-2</span></div></div>
+  </div></div>
+  <div class="spec"><div class="eyebrow">Surfaces, ink and semantic</div><div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(130px,1fr))">
+    <div class="sw"><i style="background:var(--bg)"></i><div><b>bg</b><span>--bg</span></div></div>
+    <div class="sw"><i style="background:var(--surface)"></i><div><b>surface</b><span>--surface</span></div></div>
+    <div class="sw"><i style="background:var(--surface-3)"></i><div><b>surface-3</b><span>--surface-3</span></div></div>
+    <div class="sw"><i style="background:var(--border-strong)"></i><div><b>border</b><span>--border-strong</span></div></div>
+    <div class="sw"><i style="background:var(--ink)"></i><div><b>ink</b><span>--ink</span></div></div>
+    <div class="sw"><i style="background:var(--ink-3)"></i><div><b>ink-3</b><span>--ink-3</span></div></div>
+    <div class="sw"><i style="background:var(--ok)"></i><div><b>ok</b><span>--ok</span></div></div>
+    <div class="sw"><i style="background:var(--warn)"></i><div><b>warn</b><span>--warn</span></div></div>
+    <div class="sw"><i style="background:var(--danger)"></i><div><b>danger</b><span>--danger</span></div></div>
+    <div class="sw"><i style="background:var(--info)"></i><div><b>info</b><span>--info</span></div></div>
+    <div class="sw"><i style="background:var(--ai)"></i><div><b>ai</b><span>--ai (dashed)</span></div></div>
+    <div class="sw"><i style="background:var(--human-solid)"></i><div><b>human</b><span>--human (solid)</span></div></div>
+  </div></div>
+</section>
+
+<section class="ds-sec" id="type"><h2>Typography</h2><p class="sub">Inter variable, tight tracking on headings. Devanagari falls back to Noto / Nirmala.</p>
+  <div class="spec col" style="gap:14px">
+    <div class="display">Prove what you can do</div>
+    <div class="h1">Your skills, assessed fairly</div>
+    <div class="h2">Matched qualification packs</div>
+    <div class="h3">Electrical safety and earthing</div>
+    <p class="body">Body copy — The assessor reviews the evidence and signs the final decision. AI only suggests.</p>
+    <p class="small soft">Small secondary text for helper details and metadata.</p>
+    <div class="row wrap"><span class="eyebrow">Eyebrow label</span><span class="mono">0x9f3a…c41e</span><span class="hi">मैं पंद्रह साल से एसी ठीक करता हूँ</span></div>
+  </div>
+</section>
+
+<section class="ds-sec" id="actions"><h2>Buttons</h2><p class="sub">One primary action per view. Saffron for the single most important commitment (e.g. sign, start).</p>
+  <div class="spec"><div class="row wrap">
+    <button class="btn btn-primary"><i data-icon="check"></i>Primary</button>
+    <button class="btn btn-accent"><i data-icon="pen-line"></i>Accent</button>
+    <button class="btn">Secondary</button>
+    <button class="btn btn-soft"><i data-icon="sparkles"></i>Soft</button>
+    <button class="btn btn-ghost">Ghost</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-primary is-loading">Loading</button>
+    <button class="btn" disabled>Disabled</button>
+  </div>
+  <div class="row wrap mt-4"><button class="btn btn-primary btn-sm">Small</button><button class="btn btn-primary btn-lg">Large<i data-icon="arrow-right"></i></button><button class="btn btn-icon" aria-label="Settings"><i data-icon="settings"></i></button><button class="btn btn-soft btn-icon btn-sm" aria-label="Copy"><i data-icon="copy"></i></button>
+    <div class="btn-group"><button class="btn btn-sm">Day</button><button class="btn btn-sm btn-soft">Week</button><button class="btn btn-sm">Month</button></div>
+    <div class="seg"><button class="is-active">EN</button><button>हिं</button></div></div>
+  <div class="row mt-6" style="gap:28px"><div class="col center" style="align-items:center"><button class="mic-btn" aria-label="Speak"><i data-icon="mic"></i></button><span class="small muted">Tap to speak</span></div>
+  <div class="col center" style="align-items:center"><button class="mic-btn is-listening" aria-label="Listening"><i data-icon="mic"></i></button><span class="small muted">Listening…</span></div><div class="waveform grow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+  </div>
+</section>
+
+<section class="ds-sec" id="forms"><h2>Forms</h2><p class="sub">44px controls, 10px radius, saffron focus ring.</p>
+  <div class="spec grid grid-2" style="gap:20px">
+    <div class="field"><label class="label">Full name</label><input class="input" placeholder="e.g. Ramesh Kumar" value="Ramesh Kumar"></div>
+    <div class="field"><label class="label">Phone</label><div class="input-wrap"><i data-icon="phone"></i><input class="input" placeholder="+91 98xxx xxxxx"></div><span class="hint">We send a one-time code to your employer.</span></div>
+    <div class="field"><label class="label">Qualification</label><select class="select"><option>AC Technician</option><option>Plumber (General)</option></select></div>
+    <div class="field"><label class="label">Invalid</label><input class="input is-invalid" value="12"><span class="hint" style="color:var(--danger-ink)">Enter a 10 digit number</span></div>
+    <div class="field" style="grid-column:1/-1"><label class="label">Describe your work</label><textarea class="textarea" placeholder="I have repaired split ACs for 12 years…"></textarea></div>
+    <div class="field"><label class="label">OTP</label><div class="otp"><input class="input" value="4"><input class="input" value="8"><input class="input" value="1"><input class="input"><input class="input"><input class="input"></div></div>
+    <div class="col"><label class="check"><input type="checkbox" checked>Consent to share evidence</label><label class="radio"><input type="radio" name="r" checked>English</label><label class="switch"><input type="checkbox" checked>Airplane mode (simulate offline)</label></div>
+    <div class="col" style="grid-column:1/-1;gap:10px"><div class="eyebrow">Option cards (MCQ)</div>
+      <button class="option"><span class="key">A</span>Check the capacitor first</button>
+      <button class="option is-selected"><span class="key">B</span>Isolate supply, then test the capacitor with a meter</button>
+      <div class="grid grid-2" style="gap:10px"><button class="option is-correct"><span class="key"><i data-icon="check" data-size="sm"></i></span>Correct</button><button class="option is-wrong"><span class="key"><i data-icon="x" data-size="sm"></i></span>Incorrect</button></div></div>
+  </div>
+</section>
+
+<section class="ds-sec" id="status"><h2>Chips, badges, status</h2><p class="sub">Always pair color with an icon or label.</p>
+  <div class="spec col" style="gap:16px">
+    <div class="row wrap"><span class="chip">Neutral</span><span class="chip chip-primary">Primary</span><span class="chip chip-accent">NSQF L4</span><span class="chip chip-ok"><i data-icon="check"></i>Competent</span><span class="chip chip-warn"><i data-icon="triangle-alert"></i>Needs review</span><span class="chip chip-danger"><i data-icon="x"></i>Not yet</span><span class="chip chip-info"><i data-icon="info"></i>Info</span><span class="chip chip-outline">Outline</span><span class="chip chip-sm chip-primary">Small</span><span class="crit">Critical</span><span class="badge">3</span></div>
+    <div class="row wrap"><span class="chip-suggest chip" role="button">“I install split ACs”</span><span class="chip chip-suggest" role="button">“मैं वायरिंग करता हूँ”</span></div>
+    <div class="row wrap" id="syncRow"></div>
+    <div class="row wrap"><span class="row gap-2"><span class="dot ok live"></span><span class="small">Live</span></span><span class="row gap-2"><span class="dot warn"></span><span class="small">Pending</span></span><span class="row gap-2"><span class="dot danger"></span><span class="small">Failed</span></span></div>
+  </div>
+</section>
+
+<section class="ds-sec" id="ai"><h2>AI suggestion vs human decision</h2><p class="sub">The core visual rule: <b>dashed + teal + sparkle = machine suggestion</b>, <b>solid + saffron + pen = accountable human decision</b>. They never look alike.</p>
+  <div class="grid grid-2" style="gap:24px">
+    <div class="ai-suggestion mt-2"><span class="ai-tag"><i data-icon="sparkles" data-size="xs"></i>AI suggestion</span>
+      <div class="row between start"><div><div class="h3">Matches NOS “Install split AC unit”</div><div class="ai-rationale mt-2">Candidate describes mounting indoor units, flaring copper and vacuum testing — matching PC3 and PC5.</div></div></div>
+      <div class="row mt-4 wrap"><span id="confA"></span><span class="cite"><i data-icon="link-2" data-size="xs"></i>PC3</span><span class="cite">PC5</span><span class="cite">NOS-2</span></div></div>
+    <div class="human-decision mt-2"><span class="human-tag"><i data-icon="pen-line" data-size="xs"></i>Assessor decision</span>
+      <div class="row between"><div><div class="h3">Competent · NSQF Level 4</div><div class="small soft mt-2">Overrode PC5 from 2 to 3: viva demonstrated correct vacuum procedure.</div></div><i data-icon="badge-check" data-size="xl" style="color:var(--human)"></i></div>
+      <div class="signature-line mt-4">Priya Nair</div><div class="xs muted mt-1">e-signed · 05 Oct 2026, 11:42</div></div>
+  </div>
+  <div class="banner banner-cannot-certify mt-6"><i data-icon="shield-alert"></i><div><b>AI cannot certify.</b> Suggestions are advisory. Only a signed assessor decision issues a credential.</div></div>
+</section>
+
+<section class="ds-sec" id="feedback"><h2>Banners, toasts, modals, skeletons</h2><p class="sub">Toasts via <code>toast()</code>, dialogs via <code>modal()</code>/<code>sheet()</code> from ui.js.</p>
+  <div class="spec col" style="gap:12px">
+    <div class="banner"><i data-icon="info"></i><div><b>Heads up.</b> Content is illustrative, modelled on public NSQF QPs.</div></div>
+    <div class="banner banner-ok"><i data-icon="circle-check"></i><div><b>Synced.</b> 4 answers uploaded.</div></div>
+    <div class="banner banner-warn"><i data-icon="triangle-alert"></i><div><b>Possible duplicate.</b> This photo matches an earlier upload.</div></div>
+    <div class="banner banner-danger"><i data-icon="circle-x"></i><div><b>Hash mismatch.</b> The audit chain is broken at event 41.</div></div>
+    <div style="border:1px solid var(--border);border-radius:14px;overflow:hidden"><div class="offline-banner"><i data-icon="wifi-off"></i><span class="grow">You are offline. Answers are saved on this device.</span><span class="sync sync-waiting"><i data-icon="refresh-cw" data-size="xs"></i>3 waiting</span></div><div class="offline-banner is-online"><i data-icon="wifi"></i><span class="grow">Back online. Syncing…</span></div></div>
+    <div class="row wrap"><button class="btn btn-sm" data-toast="ok">Success toast</button><button class="btn btn-sm" data-toast="warn">Warn toast</button><button class="btn btn-sm" data-toast="danger">Error toast</button><button class="btn btn-sm btn-soft" id="openModal">Open modal</button><button class="btn btn-sm btn-soft" id="openSheet">Open sheet</button></div>
+    <div class="grid grid-3"><div class="col"><span class="skeleton circle"></span><span class="skeleton title"></span><span class="skeleton line"></span></div><span class="skeleton block"></span><div class="row"><span class="spinner"></span><span class="typing"><i></i><i></i><i></i></span><span class="small muted">AI is reading…</span></div></div>
+  </div>
+</section>
+
+<section class="ds-sec" id="data"><h2>Cards, stats, progress, charts, tables</h2><p class="sub">Numbers are tabular; bars carry the value as text.</p>
+  <div class="grid grid-4">
+    <div class="card"><div class="stat"><span class="stat-label">Assessments</span><span class="stat-value">1,284</span><span class="stat-delta up"><i data-icon="trending-up" data-size="xs"></i>12% this week</span></div></div>
+    <div class="card"><div class="stat"><span class="stat-label">Pass rate</span><span class="stat-value">72%</span><span class="stat-delta down"><i data-icon="trending-down" data-size="xs"></i>3%</span></div></div>
+    <div class="card"><div class="stat"><span class="stat-label">Assessor κ</span><span class="stat-value">0.81</span><span class="stat-delta up"><i data-icon="check" data-size="xs"></i>Substantial</span></div></div>
+    <div class="card"><div class="stat"><span class="stat-label">Override rate</span><span class="stat-value">14%</span><span class="muted xs">AI vs human</span></div></div>
+  </div>
+  <div class="grid grid-2 mt-4">
+    <div class="card"><div class="card-head"><h3 class="h3">Progress</h3><span class="chip chip-primary">NOS 2 of 5</span></div>
+      <div class="row" style="gap:24px"><span id="ring1"></span><span id="ring2"></span><span id="ring3"></span><div class="grow col"><div class="progress"><i style="--w:64%"></i></div><div class="progress accent"><i style="--w:38%"></i></div><div class="progress ok"><i style="--w:92%"></i></div></div></div></div>
+    <div class="card"><div class="card-head"><h3 class="h3">NOS scores</h3><span class="xs muted">| = pass mark 60</span></div><div class="col" id="scores" style="gap:14px"></div></div>
+    <div class="card"><div class="card-head"><h3 class="h3">Pass rate by QP</h3><div class="legend"><span><i></i>Human</span><span><i class="ai"></i>AI suggested</span></div></div>
+      <div class="chart" id="chart"></div><div class="chart-labels" id="chartLabels"></div></div>
+    <div class="card"><div class="card-head"><h3 class="h3">Confidence</h3></div><div class="col" style="gap:14px"><div class="row between"><span class="small">High</span><span id="c5"></span></div><div class="conf-track high"><i style="--w:91%"></i></div><div class="row between"><span class="small">Medium</span><span id="c3"></span></div><div class="conf-track"><i style="--w:58%"></i></div><div class="row between"><span class="small">Low</span><span id="c1"></span></div><div class="conf-track low"><i style="--w:24%"></i></div></div></div>
+  </div>
+  <div class="mt-4"><div class="tabs" role="tablist"><button class="tab is-active">Queue <span class="badge">4</span></button><button class="tab">In review</button><button class="tab">Completed</button></div></div>
+  <div class="table-wrap mt-4"><table class="table"><thead><tr><th>Candidate</th><th>Qualification</th><th>AI confidence</th><th>Status</th><th class="num">Score</th></tr></thead><tbody>
+    <tr class="is-clickable"><td><div class="row"><span class="avatar">RK</span><div><div class="strong">Ramesh Kumar</div><div class="xs muted">Submitted 2h ago</div></div></div></td><td>AC Technician · L4</td><td id="tc1"></td><td><span class="chip chip-warn">Needs review</span></td><td class="num strong">78</td></tr>
+    <tr class="is-clickable"><td><div class="row"><span class="avatar accent">SD</span><div><div class="strong">Sunita Devi</div><div class="xs muted">Submitted yesterday</div></div></div></td><td>Sewing Machine Operator · L3</td><td id="tc2"></td><td><span class="chip chip-ok"><i data-icon="check"></i>Competent</span></td><td class="num strong">91</td></tr>
+    <tr class="is-clickable"><td><div class="row"><span class="avatar">MA</span><div><div class="strong">Mohd Aslam</div><div class="xs muted">Submitted 3d ago</div></div></div></td><td>Plumber General · L3</td><td id="tc3"></td><td><span class="chip chip-danger">Not yet</span></td><td class="num strong">48</td></tr>
+  </tbody></table></div>
+  <div class="grid grid-2 mt-4"><a class="card card-interactive row"><span class="icon-tile lg"><i data-icon="snowflake"></i></span><div class="grow"><div class="h3">AC Technician</div><div class="small muted">NSQF L4 · 5 NOS</div></div><i data-icon="chevron-right" class="muted"></i></a>
+    <div class="card card-hero"><div class="eyebrow" style="color:rgba(255,255,255,.7)">Your result</div><div class="h1 mt-2">Competent</div><p class="soft mt-2">NSQF Level 4 · Verified by assessor</p></div></div>
+  <div class="card card-sunken empty mt-4"><span class="icon-tile"><i data-icon="clipboard-list"></i></span><div class="strong" style="color:var(--ink)">Nothing in the queue</div><div class="small">New submissions appear here.</div></div>
+</section>
+
+<section class="ds-sec" id="nav"><h2>Navigation</h2><p class="sub">Tabs, avatars, bottom nav.</p>
+  <div class="spec row wrap" style="gap:24px"><div class="avatar-stack"><span class="avatar">AB</span><span class="avatar accent">CD</span><span class="avatar">EF</span></div><span class="avatar sm">S</span><span class="avatar lg accent">PN</span><span class="avatar xl">RK</span></div>
+</section>
+
+<section class="ds-sec" id="flow"><h2>Stepper, timeline, audit chain</h2><p class="sub">Candidate journey and hash-chained audit events.</p>
+  <div class="spec col" style="gap:28px">
+    <div class="stepper" style="overflow-x:auto"><div class="step is-done"><span class="step-dot"><i data-icon="check"></i></span><span>Declare</span></div><span class="step-line is-done"></span><div class="step is-done"><span class="step-dot"><i data-icon="check"></i></span><span>Mapping</span></div><span class="step-line is-done"></span><div class="step is-active"><span class="step-dot">3</span><span>Evidence</span></div><span class="step-line"></span><div class="step"><span class="step-dot">4</span><span>Assess</span></div><span class="step-line"></span><div class="step"><span class="step-dot">5</span><span>Result</span></div></div>
+    <div class="timeline">
+      <div class="tl-item ai"><div class="tl-time">11:02:14</div><div class="tl-title">AI mapped 3 qualifications</div><div class="small muted">hash <span class="hash">9f3a1c…c41e</span></div></div>
+      <div class="tl-item ok"><div class="tl-time">11:20:41</div><div class="tl-title">Evidence uploaded and hashed</div><div class="small muted">prev <span class="hash">9f3a1c…c41e</span></div></div>
+      <div class="tl-item human"><div class="tl-time">11:42:09</div><div class="tl-title">Assessor Priya Nair signed decision</div><div class="small muted">prev <span class="hash">b81d07…77a0</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="ds-sec" id="evidence"><h2>Evidence, QR, credential</h2><p class="sub">AI tags use dashed chips; flags show a red corner marker.</p>
+  <div class="grid grid-2" style="gap:16px">
+    <div class="spec"><div class="evidence-grid" id="evGrid"></div></div>
+    <div class="col" style="gap:16px"><div class="credential"><span class="seal"><i data-icon="badge-check" data-size="lg"></i></span><div class="eyebrow" style="color:rgba(255,255,255,.65)">Verifiable credential</div><div class="h1 mt-2">AC Technician</div><div class="soft mt-1" style="color:rgba(255,255,255,.8)">Ramesh Kumar · NSQF Level 4</div>
+      <div class="row mt-6" style="align-items:flex-end"><div class="qr" id="qr1" style="padding:8px;border-radius:12px"></div><div class="col" style="gap:6px"><div class="verify-row ok" style="color:#fff"><i data-icon="check"></i>Signature valid</div><div class="verify-row ok" style="color:#fff"><i data-icon="check"></i>Anchored</div><span class="hash" style="background:rgba(255,255,255,.12);color:#cfe">0x9f3a…c41e</span></div></div></div></div>
+  </div>
+</section>
+
+<section class="ds-sec" id="shell"><h2>App shells</h2><p class="sub">Console (assessor/admin) and phone frame (candidate). The frame dissolves to full-bleed under 520px.</p>
+  <div class="shell-demo"><div class="app-shell"><aside class="sidebar"><div class="brand"><span class="brand-mark"><i data-icon="target"></i></span><span>Eklavya</span></div><div class="nav-section">Assess</div>
+    <a class="nav-link is-active"><i data-icon="clipboard-check"></i><span>Queue</span><span class="badge">4</span></a><a class="nav-link"><i data-icon="users"></i><span>Candidates</span></a><div class="nav-section">Admin</div><a class="nav-link"><i data-icon="chart-column"></i><span>Dashboard</span></a><a class="nav-link"><i data-icon="scroll-text"></i><span>Audit log</span></a>
+    <div class="sidebar-foot"><span class="avatar accent sm">PN</span><div><div class="small strong">Priya Nair</div><div class="xs muted">Assessor</div></div></div></aside>
+    <div class="main"><div class="topbar"><div class="crumbs"><span>Queue</span><i data-icon="chevron-right"></i><b style="color:var(--ink)">Ramesh Kumar</b></div><span class="ml-auto"></span><button class="btn btn-sm btn-ghost btn-icon"><i data-icon="bell"></i></button></div>
+    <div class="page"><div class="page-head"><div><h1 class="h1">Review queue</h1><p>4 submissions waiting</p></div><button class="btn btn-primary"><i data-icon="check"></i>Approve all</button></div><div class="grid grid-2"><div class="card card-pad-sm"><span class="stat-label">Waiting</span><div class="stat-value">4</div></div><div class="card card-pad-sm"><span class="stat-label">Flags</span><div class="stat-value">2</div></div></div></div></div></div></div>
+  <div class="phone-demo mt-6"><div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="row"><i data-icon="wifi" data-size="sm"></i><i data-icon="gauge" data-size="sm"></i></span></div>
+    <div class="phone-header"><button class="btn btn-ghost btn-icon"><i data-icon="chevron-left"></i></button><h1 class="grow">Skill check</h1><span class="sync sync-saved"><i data-icon="database" data-size="xs"></i>Saved</span></div>
+    <div class="offline-banner"><i data-icon="wifi-off" data-size="sm"></i><span class="grow">Offline · answers saved locally</span></div>
+    <div class="phone-body"><div class="row between" style="margin:8px 0 16px"><div><div class="eyebrow">Question 4 of ~10</div><div class="h2 mt-1">Safety first</div></div><span id="phRing"></span></div>
+      <div class="card card-pad-sm" style="margin-bottom:12px"><div class="row start"><span class="icon-tile accent"><i data-icon="volume-2"></i></span><p class="strong" style="font-size:16px;line-height:1.45">Before opening an AC outdoor unit panel, what must you do first?</p></div></div>
+      <div class="col" style="gap:10px"><button class="option"><span class="key">A</span>Spray the coil</button><button class="option is-selected"><span class="key">B</span>Isolate power and lock out</button><button class="option"><span class="key">C</span>Check refrigerant</button></div>
+      <button class="btn btn-primary btn-lg btn-block mt-6">Next<i data-icon="arrow-right"></i></button></div>
+    <nav class="bottom-nav"><a class="is-done"><i data-icon="mic"></i><span>Declare</span></a><a class="is-done"><i data-icon="layers"></i><span>Match</span></a><a class="is-done"><i data-icon="camera"></i><span>Evidence</span></a><a class="is-active"><i data-icon="list-checks"></i><span>Assess</span></a><a><i data-icon="award"></i><span>Result</span></a></nav>
+    <div class="home-bar"></div></div></div></div>
+</section>
+</div>
+
+<section class="ds-sec" id="dark"><h2>Dark mode</h2><p class="sub">Forced dark via <code>data-theme="dark"</code> on any container, regardless of OS preference.</p>
+  <div class="dark-panel" data-theme="dark" id="darkPanel"></div>
+</section>
+</main>
+
+<div id="toastHost"></div>
+<script type="module">
+import {icon,toast,modal,sheet,ring,conf,scoreBar,syncChip,setTheme,initTheme,html} from "./js/ui.js";
+const hydrate=(root=document)=>root.querySelectorAll("i[data-icon]").forEach(i=>{const s=html(icon(i.dataset.icon,{size:isNaN(+i.dataset.size)?i.dataset.size:+i.dataset.size,cls:i.className}));i.replaceWith(s)});
+const $=id=>document.getElementById(id);
+$("syncRow").innerHTML=syncChip("saved")+syncChip("waiting")+syncChip("synced");
+$("confA").innerHTML=conf(.86);$("c5").innerHTML=conf(.91);$("c3").innerHTML=conf(.58);$("c1").innerHTML=conf(.24);
+$("tc1").innerHTML=conf(.82);$("tc2").innerHTML=conf(.94);$("tc3").innerHTML=conf(.41);
+$("ring1").innerHTML=ring(64,{sub:"done"});$("ring2").innerHTML=ring(38,{tone:"accent",size:"sm"});$("ring3").innerHTML=ring(92,{tone:"ok",size:"sm"});$("phRing").innerHTML=ring(40,{label:"4/10",size:"sm"});
+$("scores").innerHTML=scoreBar("Install & commission",82,{passMark:60})+scoreBar("Safety & earthing",71,{passMark:60})+scoreBar("Fault diagnosis",54,{passMark:60})+scoreBar("Customer handling",38,{passMark:60})+scoreBar("Tools & materials",90,{passMark:60});
+const qps=[["AC",78,70],["Elec",82,84],["Sew",66,61],["Plumb",71,75]];
+$("chart").innerHTML=qps.map(([n,a,b])=>`<div class="bar"><em>${a}</em><i style="--h:${a}%"></i></div><div class="bar"><em>${b}</em><i class="ai" style="--h:${b}%"></i></div>`).join("");
+$("chartLabels").innerHTML=qps.map(([n])=>`<span style="flex:2">${n}</span>`).join("");
+// QR (decorative pseudo-QR)
+function qr(n=25,seed=7){let s=seed,r=()=>(s=(s*1103515245+12345)&0x7fffffff)/0x7fffffff,c="";const f=(x,y)=>(x<8&&y<8)||(x>=n-8&&y<8)||(x<8&&y>=n-8);
+ for(let y=0;y<n;y++)for(let x=0;x<n;x++){let on=r()>.52;if(f(x,y)){const lx=x%(n-7<x?n-7:8),ly=y%(n-7<y?n-7:8);const X=x<8?x:x-(n-8),Y=y<8?y:y-(n-8);on=(X==0||X==6||Y==0||Y==6||(X>=2&&X<=4&&Y>=2&&Y<=4))&&X<7&&Y<7}
+ if(on)c+=`<rect x="${x}" y="${y}" width="1" height="1"/>`}
+ return `<svg viewBox="0 0 ${n} ${n}" fill="currentColor" shape-rendering="crispEdges">${c}</svg>`}
+$("qr1").innerHTML=qr();
+const tiles=[["Wiring photo","image",["PC2","PC4"],0],["Install video","camera",["PC3"],0],["Employer letter","file-text",["PC1"],0],["Duplicate?","image",["PC2"],1]];
+$("evGrid").innerHTML=tiles.map(([k,ic,t,fl])=>`<div class="evidence-tile"><div class="ph">${icon(ic,{size:"xl"})}</div><div class="kind"><span class="chip">${k}</span></div>${fl?`<span class="flag">${icon("flag",{size:"xs"})}</span>`:""}<div class="tags">${t.map(x=>`<span class="chip ai">${icon("sparkles",{size:"xs"})}${x}</span>`).join("")}</div></div>`).join("")+`<button class="evidence-add"><span>${icon("plus")}</span>Add evidence</button>`;
+hydrate();
+// dark clone
+const dp=$("darkPanel");const clone=$("light-body").cloneNode(true);clone.removeAttribute("id");
+["color","type","ai","feedback","shell","nav","flow","evidence"].forEach(id=>clone.querySelector("#"+id)?.remove());
+clone.querySelectorAll("[id]").forEach(e=>e.removeAttribute("id"));clone.querySelectorAll("input[name]").forEach(e=>e.name="dk"+e.name);
+dp.append(clone);hydrate(dp);
+// theme
+initTheme();const seg=$("themeSeg");
+const cur=()=>document.documentElement.dataset.theme||"auto";
+const sync=()=>seg.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.t===cur()));sync();
+seg.onclick=e=>{const t=e.target.closest("button")?.dataset.t;if(t){setTheme(t);sync()}};
+document.querySelectorAll("[data-toast]").forEach(b=>b.onclick=()=>toast({ok:"Evidence saved",warn:"Possible duplicate photo",danger:"Upload failed"}[b.dataset.toast],{type:b.dataset.toast,msg:"Hash 9f3a…c41e written to audit log"}));
+$("openModal").onclick=()=>modal({title:"Sign decision",icon:"pen-line",body:"You are certifying this candidate as <b>Competent</b>. This action is recorded in the audit chain.",actions:[{label:"Cancel",cls:"btn-ghost"},{label:"Sign and issue",cls:"btn-accent",value:true,icon:"pen-line"}]});
+$("openSheet").onclick=()=>sheet({title:"Add evidence",body:"Take a photo, record a short video or upload a document.",actions:[{label:"Upload",cls:"btn-soft",icon:"upload"},{label:"Camera",cls:"btn-primary",icon:"camera"}]});
+</script>
+</body>
+</html>

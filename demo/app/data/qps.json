@@ -1,0 +1,623 @@
+{
+ "disclaimer": "Illustrative content, modelled on public NSQF qualification packs. Not an official QP.",
+ "qps": [
+  {
+   "id": "qp_ac",
+   "title": "Air Conditioner Technician (Split/Window)",
+   "title_hi": "एयर कंडीशनर तकनीशियन (स्प्लिट/विंडो)",
+   "code": "ILL/Q0101",
+   "nsqf_level": 4,
+   "sector": "Electronics & Appliances",
+   "description": "Installs, services and repairs split and window room air conditioners safely.",
+   "disclaimer": "Illustrative content, modelled on public NSQF qualification packs. Not an official QP.",
+   "nos": [
+    {
+     "id": "ac.n1",
+     "code": "ILL/Q0101/N01",
+     "title": "Install split and window AC units",
+     "title_hi": "स्प्लिट और विंडो एसी की स्थापना",
+     "core": true,
+     "description": "Select location, mount units, route piping, leak-test and evacuate.",
+     "keywords": "install installation fitting mounting plate indoor outdoor unit copper pipe flare nitrogen vacuum pump drain slope lagana lagata",
+     "bridge_module": "AC installation and flaring practicum",
+     "pcs": [
+      {
+       "id": "ac.n1.p1",
+       "nos_id": "ac.n1",
+       "text": "Select a stable, level mounting location for indoor and outdoor units as per clearance norms",
+       "critical": false
+      },
+      {
+       "id": "ac.n1.p2",
+       "nos_id": "ac.n1",
+       "text": "Drill the wall, fix the mounting plate and route copper piping with correct drain slope",
+       "critical": false
+      },
+      {
+       "id": "ac.n1.p3",
+       "nos_id": "ac.n1",
+       "text": "Flare, connect and leak-test refrigerant pipes with nitrogen before releasing gas",
+       "critical": true
+      },
+      {
+       "id": "ac.n1.p4",
+       "nos_id": "ac.n1",
+       "text": "Evacuate the line with a vacuum pump and open the service valves in sequence",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "ac.n2",
+     "code": "ILL/Q0101/N02",
+     "title": "Diagnose and repair refrigeration circuit faults",
+     "title_hi": "रेफ्रिजरेशन सर्किट की खराबी पहचानना और ठीक करना",
+     "core": true,
+     "description": "Diagnose low cooling, leaks and compressor faults; recover and charge refrigerant.",
+     "keywords": "gas charging refrigerant r32 r22 r410a compressor leak manifold gauge pressure cooling fault repair brazing capillary",
+     "bridge_module": "Refrigeration circuit diagnostics lab",
+     "pcs": [
+      {
+       "id": "ac.n2.p1",
+       "nos_id": "ac.n2",
+       "text": "Read manifold gauge pressures and identify low-gas or choked-capillary symptoms",
+       "critical": false
+      },
+      {
+       "id": "ac.n2.p2",
+       "nos_id": "ac.n2",
+       "text": "Recover refrigerant and braze repaired joints using nitrogen purge",
+       "critical": true
+      },
+      {
+       "id": "ac.n2.p3",
+       "nos_id": "ac.n2",
+       "text": "Charge the correct refrigerant type and quantity as per nameplate",
+       "critical": false
+      },
+      {
+       "id": "ac.n2.p4",
+       "nos_id": "ac.n2",
+       "text": "Diagnose a non-starting or tripping compressor and replace it safely",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "ac.n3",
+     "code": "ILL/Q0101/N03",
+     "title": "Electrical connections, capacitors and controls",
+     "title_hi": "बिजली कनेक्शन, कैपेसिटर और कंट्रोल",
+     "core": true,
+     "description": "Make safe power connections and diagnose capacitors, sensors and control boards.",
+     "keywords": "wiring capacitor multimeter mcb stabilizer thermostat pcb sensor voltage earthing electrical bijli",
+     "bridge_module": "AC electrical and controls workshop",
+     "pcs": [
+      {
+       "id": "ac.n3.p1",
+       "nos_id": "ac.n3",
+       "text": "Provide a dedicated, properly rated MCB and earthed supply to the AC",
+       "critical": true
+      },
+      {
+       "id": "ac.n3.p2",
+       "nos_id": "ac.n3",
+       "text": "Measure voltage, current and capacitance with a multimeter or clamp meter",
+       "critical": false
+      },
+      {
+       "id": "ac.n3.p3",
+       "nos_id": "ac.n3",
+       "text": "Replace a failed run or start capacitor with the correct rating",
+       "critical": false
+      },
+      {
+       "id": "ac.n3.p4",
+       "nos_id": "ac.n3",
+       "text": "Check thermostat, sensor and PCB connections for control faults",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "ac.n4",
+     "code": "ILL/Q0101/N04",
+     "title": "Preventive maintenance and servicing",
+     "title_hi": "निवारक रखरखाव और सर्विसिंग",
+     "core": false,
+     "description": "Clean filters and coils, check drain, and record service.",
+     "keywords": "service servicing cleaning filter coil jet pump drain amc maintenance safai",
+     "bridge_module": "AC servicing basics",
+     "pcs": [
+      {
+       "id": "ac.n4.p1",
+       "nos_id": "ac.n4",
+       "text": "Clean filters, indoor coil and outdoor condenser using suitable methods without damaging fins",
+       "critical": false
+      },
+      {
+       "id": "ac.n4.p2",
+       "nos_id": "ac.n4",
+       "text": "Check drain line, fan motors and refrigerant pressures during service",
+       "critical": false
+      },
+      {
+       "id": "ac.n4.p3",
+       "nos_id": "ac.n4",
+       "text": "Record service readings and advise the customer on maintenance",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "ac.n5",
+     "code": "ILL/Q0101/N05",
+     "title": "Workplace safety and customer handling",
+     "title_hi": "कार्यस्थल सुरक्षा और ग्राहक व्यवहार",
+     "core": false,
+     "description": "Work at height safely, use PPE and communicate with customers.",
+     "keywords": "safety helmet gloves ladder harness customer billing estimate ppe suraksha",
+     "bridge_module": "Safety and customer service essentials",
+     "pcs": [
+      {
+       "id": "ac.n5.p1",
+       "nos_id": "ac.n5",
+       "text": "Use PPE and a secured ladder or harness when working at height for outdoor units",
+       "critical": true
+      },
+      {
+       "id": "ac.n5.p2",
+       "nos_id": "ac.n5",
+       "text": "Explain faults, estimate and charges clearly to the customer",
+       "critical": false
+      },
+      {
+       "id": "ac.n5.p3",
+       "nos_id": "ac.n5",
+       "text": "Dispose of refrigerant and waste as per environmental guidelines",
+       "critical": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "qp_elec",
+   "title": "Electrician (Domestic Solutions)",
+   "title_hi": "इलेक्ट्रीशियन (घरेलू)",
+   "code": "ILL/Q0201",
+   "nsqf_level": 4,
+   "sector": "Electrical",
+   "description": "Plans, installs and repairs domestic electrical wiring and fittings safely.",
+   "disclaimer": "Illustrative content, modelled on public NSQF qualification packs. Not an official QP.",
+   "nos": [
+    {
+     "id": "elec.n1",
+     "code": "ILL/Q0201/N01",
+     "title": "Plan and install domestic wiring",
+     "title_hi": "घरेलू वायरिंग की योजना और स्थापना",
+     "core": true,
+     "description": "Plan circuits, select cables and install concealed or surface wiring.",
+     "keywords": "wiring conduit concealed cable gauge load circuit switch socket fan point bijli wire taar",
+     "bridge_module": "Domestic wiring practicum",
+     "pcs": [
+      {
+       "id": "elec.n1.p1",
+       "nos_id": "elec.n1",
+       "text": "Plan circuits and calculate load for lighting, fan and power points",
+       "critical": false
+      },
+      {
+       "id": "elec.n1.p2",
+       "nos_id": "elec.n1",
+       "text": "Select the correct cable size and colour code for each circuit",
+       "critical": false
+      },
+      {
+       "id": "elec.n1.p3",
+       "nos_id": "elec.n1",
+       "text": "Install conduit and concealed wiring with proper bends and joints",
+       "critical": false
+      },
+      {
+       "id": "elec.n1.p4",
+       "nos_id": "elec.n1",
+       "text": "Insulate joints and keep live and neutral polarity correct at every switch and socket",
+       "critical": true
+      }
+     ]
+    },
+    {
+     "id": "elec.n2",
+     "code": "ILL/Q0201/N02",
+     "title": "Install and test switchboards, MCBs and earthing",
+     "title_hi": "स्विचबोर्ड, MCB और अर्थिंग की स्थापना और जाँच",
+     "core": true,
+     "description": "Install distribution boards, protective devices and earthing.",
+     "keywords": "switchboard mcb rccb elcb earthing earth pit db distribution board fuse megger tester",
+     "bridge_module": "DB, MCB and earthing lab",
+     "pcs": [
+      {
+       "id": "elec.n2.p1",
+       "nos_id": "elec.n2",
+       "text": "Install the distribution board with correct MCB ratings per circuit",
+       "critical": false
+      },
+      {
+       "id": "elec.n2.p2",
+       "nos_id": "elec.n2",
+       "text": "Fit an RCCB/ELCB for shock protection on socket circuits",
+       "critical": true
+      },
+      {
+       "id": "elec.n2.p3",
+       "nos_id": "elec.n2",
+       "text": "Construct and test an earth pit and connect all metal bodies",
+       "critical": false
+      },
+      {
+       "id": "elec.n2.p4",
+       "nos_id": "elec.n2",
+       "text": "Test insulation resistance and continuity before energising",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "elec.n3",
+     "code": "ILL/Q0201/N03",
+     "title": "Diagnose and repair electrical faults and fans",
+     "title_hi": "बिजली की खराबी और पंखे की मरम्मत",
+     "core": true,
+     "description": "Locate faults in circuits and repair fans and small appliances.",
+     "keywords": "fault short circuit tripping fan motor winding capacitor repair ceiling fan khrabi theek",
+     "bridge_module": "Fault finding and motor repair workshop",
+     "pcs": [
+      {
+       "id": "elec.n3.p1",
+       "nos_id": "elec.n3",
+       "text": "Isolate supply and locate short circuit and open circuit faults using a tester or multimeter",
+       "critical": true
+      },
+      {
+       "id": "elec.n3.p2",
+       "nos_id": "elec.n3",
+       "text": "Diagnose a slow or humming ceiling fan and replace the capacitor or bearing",
+       "critical": false
+      },
+      {
+       "id": "elec.n3.p3",
+       "nos_id": "elec.n3",
+       "text": "Rewind or replace a burnt small motor winding where required",
+       "critical": false
+      },
+      {
+       "id": "elec.n3.p4",
+       "nos_id": "elec.n3",
+       "text": "Test the repaired circuit and record the repair",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "elec.n4",
+     "code": "ILL/Q0201/N04",
+     "title": "Safety and customer interaction",
+     "title_hi": "सुरक्षा और ग्राहक से व्यवहार",
+     "core": false,
+     "description": "Follow electrical safety rules and communicate clearly.",
+     "keywords": "safety ppe insulated gloves customer estimate first aid shock suraksha",
+     "bridge_module": "Electrical safety and soft skills",
+     "pcs": [
+      {
+       "id": "elec.n4.p1",
+       "nos_id": "elec.n4",
+       "text": "Use insulated tools and PPE and lock out the supply before work",
+       "critical": true
+      },
+      {
+       "id": "elec.n4.p2",
+       "nos_id": "elec.n4",
+       "text": "Give a clear estimate and explain the work to the customer",
+       "critical": false
+      },
+      {
+       "id": "elec.n4.p3",
+       "nos_id": "elec.n4",
+       "text": "Apply first aid for electric shock and call for help",
+       "critical": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "qp_sew",
+   "title": "Sewing Machine Operator (Apparel)",
+   "title_hi": "सिलाई मशीन ऑपरेटर (परिधान)",
+   "code": "ILL/Q0301",
+   "nsqf_level": 4,
+   "sector": "Apparel",
+   "description": "Operates industrial and domestic sewing machines to stitch garments to quality standards.",
+   "disclaimer": "Illustrative content, modelled on public NSQF qualification packs. Not an official QP.",
+   "nos": [
+    {
+     "id": "sew.n1",
+     "code": "ILL/Q0301/N01",
+     "title": "Set up and maintain the sewing machine",
+     "title_hi": "सिलाई मशीन की सेटिंग और रखरखाव",
+     "core": true,
+     "description": "Thread, adjust tension, change needles and oil the machine.",
+     "keywords": "machine needle bobbin tension oiling threading stitch length silai machine maintenance",
+     "bridge_module": "Machine setup and maintenance clinic",
+     "pcs": [
+      {
+       "id": "sew.n1.p1",
+       "nos_id": "sew.n1",
+       "text": "Thread the machine and wind the bobbin correctly",
+       "critical": false
+      },
+      {
+       "id": "sew.n1.p2",
+       "nos_id": "sew.n1",
+       "text": "Select the needle by fabric and adjust thread tension and stitch length",
+       "critical": false
+      },
+      {
+       "id": "sew.n1.p3",
+       "nos_id": "sew.n1",
+       "text": "Clean and oil the machine and change worn needles",
+       "critical": false
+      },
+      {
+       "id": "sew.n1.p4",
+       "nos_id": "sew.n1",
+       "text": "Stop the machine and report abnormal noise or skipped stitches",
+       "critical": true
+      }
+     ]
+    },
+    {
+     "id": "sew.n2",
+     "code": "ILL/Q0301/N02",
+     "title": "Stitch garment components",
+     "title_hi": "परिधान के हिस्से सिलना",
+     "core": true,
+     "description": "Cut as per pattern and stitch seams, hems and components to specification.",
+     "keywords": "stitching seam hemming collar sleeve shirt trouser blouse kurta silai darzi pattern cutting measurement",
+     "bridge_module": "Garment stitching practicum",
+     "pcs": [
+      {
+       "id": "sew.n2.p1",
+       "nos_id": "sew.n2",
+       "text": "Read measurements and pattern and cut components with correct grain",
+       "critical": false
+      },
+      {
+       "id": "sew.n2.p2",
+       "nos_id": "sew.n2",
+       "text": "Stitch plain, french and flat-felled seams with uniform stitch density",
+       "critical": false
+      },
+      {
+       "id": "sew.n2.p3",
+       "nos_id": "sew.n2",
+       "text": "Attach collars, sleeves, plackets and waistbands accurately",
+       "critical": false
+      },
+      {
+       "id": "sew.n2.p4",
+       "nos_id": "sew.n2",
+       "text": "Hem and finish edges without puckering",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "sew.n3",
+     "code": "ILL/Q0301/N03",
+     "title": "Quality checking and finishing",
+     "title_hi": "गुणवत्ता जाँच और फिनिशिंग",
+     "core": false,
+     "description": "Inspect garments, fix defects, trim, press and pack.",
+     "keywords": "quality finishing ironing thread trimming packing defect inspection",
+     "bridge_module": "Quality and finishing basics",
+     "pcs": [
+      {
+       "id": "sew.n3.p1",
+       "nos_id": "sew.n3",
+       "text": "Inspect stitched garments against measurement and defect checklists",
+       "critical": false
+      },
+      {
+       "id": "sew.n3.p2",
+       "nos_id": "sew.n3",
+       "text": "Trim loose threads and press garments at the correct temperature",
+       "critical": false
+      },
+      {
+       "id": "sew.n3.p3",
+       "nos_id": "sew.n3",
+       "text": "Fold, tag and pack garments as per buyer instructions",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "sew.n4",
+     "code": "ILL/Q0301/N04",
+     "title": "Health, safety and productivity at the workstation",
+     "title_hi": "कार्यस्थल पर स्वास्थ्य, सुरक्षा और उत्पादकता",
+     "core": false,
+     "description": "Work safely and meet daily targets.",
+     "keywords": "safety finger guard posture target productivity ergonomics suraksha",
+     "bridge_module": "Workplace safety and productivity",
+     "pcs": [
+      {
+       "id": "sew.n4.p1",
+       "nos_id": "sew.n4",
+       "text": "Keep fingers clear of the needle and use guards",
+       "critical": true
+      },
+      {
+       "id": "sew.n4.p2",
+       "nos_id": "sew.n4",
+       "text": "Maintain posture and take breaks to avoid strain",
+       "critical": false
+      },
+      {
+       "id": "sew.n4.p3",
+       "nos_id": "sew.n4",
+       "text": "Plan the day to meet the production target with quality",
+       "critical": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "qp_plumb",
+   "title": "Plumber (General)",
+   "title_hi": "प्लंबर (सामान्य)",
+   "code": "ILL/Q0401",
+   "nsqf_level": 3,
+   "sector": "Construction",
+   "description": "Installs and repairs water supply, sanitary fixtures and drainage in buildings.",
+   "disclaimer": "Illustrative content, modelled on public NSQF qualification packs. Not an official QP.",
+   "nos": [
+    {
+     "id": "plumb.n1",
+     "code": "ILL/Q0401/N01",
+     "title": "Install water supply pipes and fittings",
+     "title_hi": "पानी की सप्लाई पाइप और फिटिंग लगाना",
+     "core": true,
+     "description": "Lay and join pipes, install valves, taps and overhead tanks.",
+     "keywords": "pipe fitting pvc cpvc gi upvc tap valve tank threading teflon solvent cement nal pipe lagana geyser",
+     "bridge_module": "Water supply piping practicum",
+     "pcs": [
+      {
+       "id": "plumb.n1.p1",
+       "nos_id": "plumb.n1",
+       "text": "Read the layout and mark pipe routes with correct slopes and supports",
+       "critical": false
+      },
+      {
+       "id": "plumb.n1.p2",
+       "nos_id": "plumb.n1",
+       "text": "Cut, thread and join GI pipes and fit PVC/CPVC pipes using solvent cement",
+       "critical": false
+      },
+      {
+       "id": "plumb.n1.p3",
+       "nos_id": "plumb.n1",
+       "text": "Install valves, taps and overhead tank connections without leaks",
+       "critical": true
+      },
+      {
+       "id": "plumb.n1.p4",
+       "nos_id": "plumb.n1",
+       "text": "Pressure-test the supply line before closing walls",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "plumb.n2",
+     "code": "ILL/Q0401/N02",
+     "title": "Install sanitary fixtures and drainage",
+     "title_hi": "सैनिटरी फिक्सचर और ड्रेनेज लगाना",
+     "core": true,
+     "description": "Fix WC, basin, sink and connect waste lines with correct gradient and traps.",
+     "keywords": "drain sewer trap commode toilet wash basin flush tank gradient waste pipe nali bathroom",
+     "bridge_module": "Sanitary fixtures and drainage lab",
+     "pcs": [
+      {
+       "id": "plumb.n2.p1",
+       "nos_id": "plumb.n2",
+       "text": "Fix wash basin, sink and WC at the correct height and level",
+       "critical": false
+      },
+      {
+       "id": "plumb.n2.p2",
+       "nos_id": "plumb.n2",
+       "text": "Lay waste pipes with the correct gradient and fit water-seal traps",
+       "critical": true
+      },
+      {
+       "id": "plumb.n2.p3",
+       "nos_id": "plumb.n2",
+       "text": "Provide vents and clean-outs and connect to the soil line",
+       "critical": false
+      },
+      {
+       "id": "plumb.n2.p4",
+       "nos_id": "plumb.n2",
+       "text": "Test fixtures for flushing and leakage",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "plumb.n3",
+     "code": "ILL/Q0401/N03",
+     "title": "Detect and repair leakages and blockages",
+     "title_hi": "रिसाव और ब्लॉकेज पहचानना और ठीक करना",
+     "core": false,
+     "description": "Find leaks and clear blockages.",
+     "keywords": "leak leakage washer repair blockage choke tap tapakna risav plunger pipe wrench",
+     "bridge_module": "Leak detection and repair clinic",
+     "pcs": [
+      {
+       "id": "plumb.n3.p1",
+       "nos_id": "plumb.n3",
+       "text": "Locate the source of a leak using visual checks and pressure tests",
+       "critical": false
+      },
+      {
+       "id": "plumb.n3.p2",
+       "nos_id": "plumb.n3",
+       "text": "Replace washers, cartridges and damaged pipe sections",
+       "critical": false
+      },
+      {
+       "id": "plumb.n3.p3",
+       "nos_id": "plumb.n3",
+       "text": "Clear blocked drains using rods or plungers without damaging pipes",
+       "critical": false
+      }
+     ]
+    },
+    {
+     "id": "plumb.n4",
+     "code": "ILL/Q0401/N04",
+     "title": "Safe work practice and customer handling",
+     "title_hi": "सुरक्षित कार्य पद्धति और ग्राहक व्यवहार",
+     "core": false,
+     "description": "Follow safety, hygiene and customer communication.",
+     "keywords": "safety ppe gloves trench customer billing hygiene water waste suraksha",
+     "bridge_module": "Safety and customer handling",
+     "pcs": [
+      {
+       "id": "plumb.n4.p1",
+       "nos_id": "plumb.n4",
+       "text": "Use PPE and safe practices in trenches and confined spaces",
+       "critical": true
+      },
+      {
+       "id": "plumb.n4.p2",
+       "nos_id": "plumb.n4",
+       "text": "Protect floors and fixtures and clean up after work",
+       "critical": false
+      },
+      {
+       "id": "plumb.n4.p3",
+       "nos_id": "plumb.n4",
+       "text": "Explain the work and cost to the customer clearly",
+       "critical": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

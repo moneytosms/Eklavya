@@ -1,0 +1,28 @@
+[project]
+name = "eklavya-demo"
+version = "0.1.0"
+description = "Eklavya demo: AI-assisted, assessor-certified skill assessment (illustrative)"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "python-multipart",
+  "cryptography",
+  "qrcode[pil]",
+  "pydantic",
+  "pytest",
+  "httpx",
+]
+
+[project.scripts]
+eklavya = "app.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
